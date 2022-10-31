@@ -173,5 +173,17 @@ header .member-box .btn{margin-left:24px;}
 .tables-wrap .table4 tbody tr { border-bottom: 1px solid #d9d9d9;}
 .tables-wrap .table4 tbody tr:last-child { border-bottom: none;}
 .tables-wrap .table4 td { font-size: 14px; }
-
 .tables-wrap .table4 tbody tr td span.red { color: #da1a1a; }
+
+.con-box2 { padding: 34px 18px;}
+.tables-wrap3 { display: flex; }
+.tables-wrap3 th { padding: 12px 5px; }
+.tables-wrap3.color-table th:first-child { border-radius: 0;}
+.tables-wrap3.color-table th:last-child { border-radius: 0;}
+.tables-wrap3.color-table tr:last-child td:last-child { border-radius: 0;}
+.tables-wrap3.color-table tr:last-child td:first-child { border-radius: 0;}
+.tables-wrap3 table:nth-child(1) > thead > tr > th:nth-child(1) { border-top-left-radius: 16px; }
+.tables-wrap3 table:nth-child(3) > thead > tr > th:nth-child(7) { border-top-right-radius: 16px;}
+.tables-wrap3 table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(1) { border-bottom-left-radius: 8px; }
+.tables-wrap3 > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(7) { border-bottom-right-radius: 8px;}
+.tables-wrap3.color-table tr th:last-child { border-right: 1px solid #fff;}
