@@ -30,8 +30,10 @@ h4{color:var(--headColor);font-size:16px;font-weight:400;}
 label{color:#292929;font-size:16px;cursor:pointer;}
 table{width:100%;border-top:1px solid #242122;border-collapse:collapse;border-spacing:0;}
 tr{border-bottom:1px solid #eee;}
-th,td{font-weight:500;text-align:center;padding:15px 10px;}
+th,td{font-weight:400;text-align:center;padding:15px 10px;}
+th{font-size: 14px; font-weight: 500; padding: 12px 10px; }
 .no-data{color:var(--subColor);font-size:18px;font-weight:500;text-align:center;padding:20px 0;}
+
 
 /* flex */
 [class].j-start{justify-content:flex-start;}
@@ -47,7 +49,7 @@ th,td{font-weight:500;text-align:center;padding:15px 10px;}
 
 /* 레이아웃 */
 .wrap{max-width:1180px;margin:0 auto;}
-.con-box{width:100%;background:#fff;border-radius:18px;padding:38px 58px;margin:0 auto;overflow:hidden;box-shadow:rgba(0,0,0,0.15) 0 0 10px 2px;}
+.con-box{width:100%;background:#fff;border-radius:18px;padding:33px; margin:0 auto; margin-bottom:20px; overflow:hidden;box-shadow:rgba(0,0,0,0.15) 0 0 10px 2px; margin-bottom: 20px;}
 
 @media (max-width:1179px){
     .wrap{width:100%;padding:0 15px;}
@@ -75,14 +77,14 @@ header .member-box .btn{margin-left:24px;}
 }
 
 /* thead 색추가 버전 테이블 레이아웃 */
-.table-wrap{border-radius:16px 16px 8px 8px;margin:50px auto;}
+.table-wrap{border-radius:16px 16px 8px 8px; margin: 0 auto; }
 .table-wrap.color-table table{border-top:0;border-collapse:separate;}
 .table-wrap.color-table th{background:var(--tableHeadColor);color:#fff;}
 .table-wrap.color-table th:first-child{border-radius:16px 0 0 0;}
 .table-wrap.color-table th:last-child{border-radius:0 16px 0 0;}
 .table-wrap.color-table tr:last-child td:first-child{border-radius:0 0 0 8px;}
 .table-wrap.color-table tr:last-child td:last-child{border-radius:0 0 8px 0;}
-.table-wrap.color-table td{border-bottom:1px solid var(--borderColor);padding:24px 10px 10px;}
+.table-wrap.color-table td{border-bottom:1px solid var(--borderColor); }
 .table-wrap.color-table td:first-child{border-left:1px solid var(--borderColor);}
 .table-wrap.color-table td:last-child{border-right:1px solid var(--borderColor);}
 
@@ -146,3 +148,30 @@ header .member-box .btn{margin-left:24px;}
 .wrap.find-account{width:380px;}
 .wrap.find-account h2{text-align:center;margin:70px 0;}
 .wrap.find-account .btn-wrap{margin-top:52px;}
+
+
+/* 대시보드 */
+.con-box h3 { padding-left: 10px; margin-bottom: 22px;}
+.con-box .tel-col { font-size: 14px; }
+.con-box .tel-col span:nth-child(3) { margin-right: 9px;}
+.con-box .tel-col img { margin-right:3.5px ; vertical-align:middle;}
+.con-box .tel-col a { font-size: 12px; text-decoration: underline;}
+.tables-wrap { display: flex; justify-content: space-between; font-size: 13px; flex-wrap: wrap;}
+.tables-wrap2 { margin-top: 60px; }
+.tables-wrap .con-box { max-width: 580px; margin-left: 0; }
+.tables-wrap .con-box:first-child { margin-right: 20px;}
+.tables-wrap .con-box .table-wrap table tr td:nth-child(2) { text-align: start; font-size: 14px;}
+.tables-wrap .con-box .table-wrap table tr td:first-child { color: #666; font-size: 14px;}
+.tables-wrap .con-box .table-wrap table tr td:last-child { color: #999; font-size: 12px; }
+
+.tables-wrap .table3 { border: none;}
+.tables-wrap .table3 tr { border:none;}
+.tables-wrap .table3 th, .tables-wrap .table4 th { font-size: 16px; color: var(--headColor);}
+.tables-wrap .table3 td { font-size: 28px; font-weight: 700;color: var(--headColor); }
+.tables-wrap .table3 td.red { color: #da1a1a;}
+.tables-wrap .table4, .tables-wrap .table4 tr { border: none;}
+.tables-wrap .table4 tbody tr { border-bottom: 1px solid #d9d9d9;}
+.tables-wrap .table4 tbody tr:last-child { border-bottom: none;}
+.tables-wrap .table4 td { font-size: 14px; }
+
+.tables-wrap .table4 tbody tr td span.red { color: #da1a1a; }

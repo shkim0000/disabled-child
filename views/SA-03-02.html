@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>장애아가족 양육지원사업</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/common.css">
+
+  <!-- js & lib -->
+  <script src="../lib/jquery-3.6.1/jquery-3.6.1.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <ul class="menu">
+      <li class="on"><a href="#">Dash Board</a></li>
+      <li><a href="#">돌봄 서비스</a></li>
+      <li><a href="#">교육의수</a></li>
+      <li><a href="#">돌보미 급여조회</a></li>
+      <li><a href="#">게시판</a></li>
+      <li><a href="#">관리자페이지</a></li>
+    </ul>
+    <div class="member-box">
+      <p><span>(중앙)</span> 홍길동(kim0001)</p>
+      <a href="#" class="btn line">로그아웃</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <h2 class="dashboard">Dash Board</h2>
+  <div class="tables-wrap">
+    <div class="con-box">
+      <h3>전일 서비스 진행 현황</h3>
+      <div>
+        <table class="table3">
+          <thead>
+            <tr>
+              <th>전체</th>
+              <th>계획</th>
+              <th>진행 중</th>
+              <th>종료</th>
+              <th>승인완료</th>
+              <th>취소</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>565</td>
+              <td>60</td>
+              <td>380</td>
+              <td>47</td>
+              <td>73</td>
+              <td class="red">5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="con-box">
+      <h3>전일 서비스 진행 현황</h3>
+      <div>
+        <table class="table3">
+          <thead>
+            <tr>
+              <th>전체</th>
+              <th>계획</th>
+              <th>진행 중</th>
+              <th>종료</th>
+              <th>승인완료</th>
+              <th>취소</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>565</td>
+              <td>60</td>
+              <td>380</td>
+              <td>47</td>
+              <td>73</td>
+              <td class="red">5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="con-box">
+      <h3>배정 취소 요청</h3>
+      <div>
+        <table class="table4">
+          <thead>
+            <tr>
+              <th>시행기관</th>
+              <th>돌보미</th>
+              <th>보호자</th>
+              <th>장애아동</th>
+              <th>배정일자</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>서울</td>
+              <td class="tel-col">
+                <span class="red">[취소요청]</span><span> 김하나</span><br>
+                <img src="../img/call_icon.svg" alt="전화아이콘"><a href="#">010-000-0000</a>
+              </td>
+              <td class="tel-col">
+                <span>박일</span><br>
+                <img src="../img/call_icon.svg" alt="전화아이콘"><a href="#">010-000-0000</a>
+              </td>
+              <td>박하나</td>
+              <td>2022.05.01</td>
+            </tr>
+            <tr>
+              <td>서울</td>
+              <td>
+                <span class="red">[취소요청]</span><span> 김둘</span><br>
+                <img src="../img/call_icon.svg" alt="전화아이콘"><a href="#">010-000-0000</a>
+              </td>
+              <td>
+                <span>박이</span><br>
+                <img src="../img/call_icon.svg" alt="전화아이콘"><a href="#">010-000-0000</a>
+              </td>
+              <td>김둘</td>
+              <td>2022.05.01</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box">
+      <h3>신규 공지사항</h3>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <td>중앙</td>
+            <td>돌봄 서비스 이용자 필독</td>
+            <td>22.08.07 14:08:00</td>
+          </tr>
+          <tr>
+            <td>중앙</td>
+            <td>돌봄서비스 돌보미 필독</td>
+            <td>22.08.07 14:07:00</td>
+          </tr>
+          <tr>
+            <td>경기</td>
+            <td>돌보미 급여관련</td>
+            <td>22.08.07 13:15:00</td>
+          </tr>
+          <tr>
+            <td>울산</td>
+            <td>오프라인 보수교육 실시 공고</td>
+            <td>22.08.07 10:00:07</td>
+          </tr>
+          <tr>
+            <td>대전</td>
+            <td>휴식 권장 공고</td>
+            <td>22.08.07 08:54:12</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="con-box">
+      <h3>신규 1:1 문의</h3>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <td>중앙</td>
+            <td>돌봄 서비스 이용자 필독</td>
+            <td>김하나</td>
+            <td>이용자</td>
+            <td>22.08.07 14:08:00</td>
+          </tr>
+          <tr>
+            <td>중앙</td>
+            <td>돌봄서비스 돌보미 필독</td>
+            <td>김둘</td>
+            <td>이용자</td>
+            <td>22.08.07 14:07:00</td>
+          </tr>
+          <tr>
+            <td>경기</td>
+            <td>돌보미 급여관련</td>
+            <td>김셋</td>
+            <td>이용자</td>
+            <td>22.08.07 13:15:00</td>
+          </tr>
+          <tr>
+            <td>울산</td>
+            <td>오프라인 보수교육 실시 공고</td>
+            <td>박하나</td>
+            <td>돌보미</td>
+            <td>22.08.07 10:00:07</td>
+          </tr>
+          <tr>
+            <td>대전</td>
+            <td>휴식 권장 공고</td>
+            <td>박둘</td>
+            <td>돌보미</td>
+            <td>22.08.07 08:54:12</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
