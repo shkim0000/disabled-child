@@ -4,7 +4,7 @@ h1 - 로고(없을경우 업체명) 추가 시 적용
 h2 - 대제목 .dashboard 추가 시 대시보드용 대제목
 h3 - 소제목 및 팝업 명
 
-h5 - 
+h5 -
 p - 일반 문구
 */
 
@@ -36,6 +36,10 @@ tr{border-bottom:1px solid #eee;}
 th,td{font-weight:400;text-align:center;padding:15px 10px;}
 th{font-size: 14px; font-weight: 500; padding: 12px 10px; }
 .no-data{color:var(--subColor);font-size:18px;font-weight:500;text-align:center;padding:20px 0;}
+.scroll-box{height:200px;overflow-y:auto;}
+.scroll-box::-webkit-scrollbar{width:8px;background:#dbdbdb;border-radius:5px;}
+.scroll-box::-webkit-scrollbar-thumb{height:10%;background:#999;border-radius:5px;}
+.scroll-box::-webkit-scrollbar-thumb:hover{background:#555;}
 .red { color: #da1a1a !important;}
 
 /* flex */
@@ -196,7 +200,7 @@ h3.info-title { margin:20px 27px;}
 .info-input-box { display: flex; justify-content: space-between; align-items: center; max-width: 950px;}
 .info-input-box .input { display: flex; justify-content: flex-start; margin: 0;}
 .info-input-box .input input, .info-input-box .input select, .info-input { width: 108px;}
-.info-input-box .input select,  { border: 1px solid #D9D9D9; border-radius: 8px;}
+.info-input-box .input select { border: 1px solid #D9D9D9; border-radius: 8px;}
 .info-input-box .input label { margin: 0 16px 0 0; line-height: 42px; }
 .info-input-box button.btn { width: 66px;}
 .age-input { margin: 0 16px; line-height: 42px;}
@@ -222,11 +226,11 @@ h3.info-title { margin:20px 27px;}
 .check-box4 .input input { display: inline-block; border: 1px solid #D9D9D9; border-radius: 8px; padding: 8px; margin-left: 15px; width: 180px;}
 
 .table-heading { display: flex; justify-content: space-between; margin-bottom: 15px;}
-.table-heading button { background-color: #fff; border: none; border-radius: 8px; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08); padding: 8px; }
+.table-heading button { background-color: #fff; border: none; border-radius: 8px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); padding: 8px; }
 .table-heading button:first-child { margin-right: 15px;}
 .table-heading button img, .table-heading button span { vertical-align: middle;}
 .table-heading select.info-input { padding:5px; border: 1px solid #D9D9D9; border-radius: 8px;}
-.table5, .table6 {box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08); margin-bottom: 20px;}
+.table5, .table6 {box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); margin-bottom: 20px;}
 .table5 td { height: 300px; }
 .pagpan { padding: 15px 0; text-align: center;}
 .pagpan span { margin-right: 15px;}
