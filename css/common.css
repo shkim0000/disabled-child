@@ -3,6 +3,8 @@
 h1 - 로고(없을경우 업체명) 추가 시 적용
 h2 - 대제목 .dashboard 추가 시 대시보드용 대제목
 h3 - 소제목 및 팝업 명
+
+h5 - 
 p - 일반 문구
 */
 
@@ -27,6 +29,7 @@ h2{color:var(--headColor);font-size:24px;font-weight:500;}
 h2.dashboard{font-size:22px;font-weight:700;margin:20px 27px;}
 h3{color:var(--headColor);font-size:18px;font-weight:700;}
 h4{color:var(--headColor);font-size:16px;font-weight:400;}
+h5{color:var(--headColor); font-size: 14px; font-weight: 500;}
 label{color:#292929;font-size:16px;cursor:pointer;}
 table{width:100%;border-top:1px solid #242122;border-collapse:collapse;border-spacing:0;}
 tr{border-bottom:1px solid #eee;}
@@ -105,6 +108,7 @@ header .member-box .btn{margin-left:24px;}
 .input-box input[type=text], .input-box input[type=password]{width:100%;border:1px solid #dbdbdb;border-radius:4px;padding:10px;}
 .input-box textarea{width:100%;border:1px solid #dbdbdb;border-radius:4px;padding:10px;resize:none;}
 .input-box label{display:inline-block;margin-bottom:8px;}
+.input-box input.info-input { border-radius: 8px; }
 .btn-wrap{display:flex;align-items:center;}
 .btn-wrap > *{margin-right:24px;}
 .btn-wrap > *:last-child{margin-right:0;}
@@ -185,3 +189,74 @@ header .member-box .btn{margin-left:24px;}
 .tables-wrap3 table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(1) { border-bottom-left-radius: 8px; }
 .tables-wrap3 table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(7) { border-bottom-right-radius: 8px;}
 .tables-wrap3.color-table tr th:last-child { border-right: 1px solid #fff;}
+
+
+/* 돌보미 정보 */
+h3.info-title { margin:20px 27px;}
+.info-input-box { display: flex; justify-content: space-between; align-items: center; max-width: 950px;}
+.info-input-box .input { display: flex; justify-content: flex-start; margin: 0;}
+.info-input-box .input input, .info-input-box .input select, .info-input { width: 108px;}
+.info-input-box .input select,  { border: 1px solid #D9D9D9; border-radius: 8px;}
+.info-input-box .input label { margin: 0 16px 0 0; line-height: 42px; }
+.info-input-box button.btn { width: 66px;}
+.age-input { margin: 0 16px; line-height: 42px;}
+
+.info-details { display: flex;  margin-top: 25px; }
+.info-detail-item h4 { margin-bottom: 18px; margin-left: 16px;}
+.info-detail-box { border: 1px solid #dbdbdb;padding: 13px 16px; height: 170px; border-right: 0; }
+.info-detail-item:last-child .info-detail-box { border-right: 1px solid #dbdbdb;}
+.check-box2, .check-box3, .check-box4 { flex-direction: column; flex-wrap: wrap; align-items: flex-start;}
+.info-detail-item.adress { width: 110px; }
+.info-detail-item.place { width:200px ;}
+.info-detail-item.target {  width: 305px;}
+.info-detail-item.time { width: 395px; }
+.check-box3 { height: 100%; }
+.check-box4 .check { display: inline-block;}
+.check-box4 .time-select .check:first-child { margin-right: 20px; }
+.check-box4 > div { margin-bottom: 10px;}
+.check-box4 .weekday-select .check { margin-right: 6px;}
+.check-box4 .weekday-select .check:last-child { margin-right: 0;}
+.check-box4 .total-time span { margin-right: 15px;}
+.check-box4 .total-time span:nth-child(2n-1) { text-decoration: underline;}
+.check-box4 .total-time span:last-child { color: #757575; font-size: 11px;}
+.check-box4 .input input { display: inline-block; border: 1px solid #D9D9D9; border-radius: 8px; padding: 8px; margin-left: 15px; width: 180px;}
+
+.table-heading { display: flex; justify-content: space-between; margin-bottom: 15px;}
+.table-heading button { background-color: #fff; border: none; border-radius: 8px; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08); padding: 8px; }
+.table-heading button:first-child { margin-right: 15px;}
+.table-heading button img, .table-heading button span { vertical-align: middle;}
+.table-heading select.info-input { padding:5px; border: 1px solid #D9D9D9; border-radius: 8px;}
+.table5, .table6 {box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08); margin-bottom: 20px;}
+.table5 td { height: 300px; }
+.pagpan { padding: 15px 0; text-align: center;}
+.pagpan span { margin-right: 15px;}
+.pagpan span.active { text-decoration: underline; font-weight: 700;}
+
+.user-info-inner-wrap { display: flex;}
+
+/* 이용자 정보 */
+.tab-info { max-width: 300px; }
+.con-box2 { border-radius: 0 16px 16px 16px;}
+.info-input-box2 { margin-top: 20px; justify-content: flex-start;}
+.info-input-box2 .input { margin-right: 20px;}
+.user-info-leftbox, .account-info-leftbox {margin-right: 150px;}
+.user-info-leftbox .input label, .user-info-rightbox .input label, .account-info-leftbox .input label, .account-info-rightbox .input label{ min-width: 90px;}
+
+.user-info-leftbox .input input { max-width: 190px;}
+.input-box.user-info-rightbox .input input { width: 290px;}
+.input-box.user-info-rightbox .input textarea { width: 290px; }
+.textare-label { vertical-align: top; padding-top: 10px;}
+
+.active-info-wrap { margin-top: 40px;}
+.active-info-wrap .input-box .input input { margin-left: 20px; width: 190px;}
+
+.account-info-wrap { margin: 45px 0; }
+.account-info-wrap .input-box .input input, .account-info-wrap .input-box .input select { margin-left: 20px; width: 190px;}
+.account-info-wrap select { padding: 8px; border: 1px solid #dbdbdb; border-radius: 4px;}
+.button-wrap { display: flex; justify-content: end; max-width:900px ;}
+.con-inner-btn.btn { width: 66px;  }
+
+.account-info-inner-wrap { display: flex;}
+.info-wrap { margin-top: 45px;}
+
+
