@@ -69,8 +69,8 @@
           <p>강서구</p>
           <p>양천구</p>
           <div class="address-btn-box">
-            <button><img src="../img/plus.svg" alt=""></button>
-            <button><img src="../img/minus.svg" alt=""></button>
+            <button class="btn"><img src="../img/plus.svg" alt=""></button>
+            <button class="btn"><img src="../img/minus.svg" alt=""></button>
           </div>
         </div>
       </div>
@@ -207,17 +207,19 @@
 
   <div class="table-heading">
     <div>
-      <button>
-        <img src="../img/Excel-logo.svg" alt="엑셀로고">
-        <span>Excel 업로드</span>
-      </button>
-      <button>
-        <img src="../img/Excel-logo.svg" alt="엑셀로고">
-        <span>Excel 다운로드</span>
-      </button>
+      <div class="upload-filebox btn shadow">
+        <label for="upload-file"><img src="../img/Excel-logo.svg">Excel 업로드</label>
+        <input type="file" id="upload-file"> 
+      </div>
+      <div class="download-filebox btn shadow">
+        <a href="" download="">
+          <img src="../img/Excel-logo.svg" alt="엑셀로고">
+          <span>Excel 다운로드</span>
+        </a>
+      </div>
     </div>
     <div>
-      <button>
+      <button class="btn shadow">
         <span>3개월 이상 활동 공백 돌보미 찾기</span>
       </button>
       <select name="" id="" class="info-input">
@@ -236,9 +238,9 @@
           <th>성명</th>
           <th>성별</th>
           <th>나이</th>
-          <th>활동가능 지역</th>
-          <th>활동희망 장소</th>
-          <th>자격증 여부</th>
+          <th>주소지</th>
+          <th>장애유형</th>
+          <th>소득 기준</th>
         </tr>
       </thead>
       <tbody>
@@ -254,7 +256,7 @@
     <table>
       <thead>
         <tr>
-          <th>연변</th>
+          <th>연번</th>
           <th>시행기관</th>
           <th>성명</th>
           <th>성별</th>
@@ -271,9 +273,9 @@
           <td>김하나</td>
           <td>여</td>
           <td>41</td>
-          <td>강북구, 도봉구, 노원구</td>
-          <td>모두가능</td>
-          <td>워딩 필요</td>
+          <td>서울특별시 강서구</td>
+          <td>자폐성 장애</td>
+          <td>120%이하</td>
         </tr>
         <tr>
           <td>120</td>
@@ -281,9 +283,9 @@
           <td>김하나</td>
           <td>여</td>
           <td>41</td>
-          <td>강북구, 도봉구, 노원구</td>
-          <td>모두가능</td>
-          <td>워딩 필요</td>
+          <td>서울특별시 강서구</td>
+          <td>자폐성 장애</td>
+          <td>120%이하</td>
         </tr>
         <tr>
           <td>120</td>
@@ -291,9 +293,9 @@
           <td>김하나</td>
           <td>여</td>
           <td>41</td>
-          <td>강북구, 도봉구, 노원구</td>
-          <td>모두가능</td>
-          <td>워딩 필요</td>
+          <td>서울특별시 강서구</td>
+          <td>자폐성 장애</td>
+          <td>120%이하</td>
         </tr>
         <tr>
           <td>120</td>
@@ -301,9 +303,9 @@
           <td>김하나</td>
           <td>여</td>
           <td>41</td>
-          <td>강북구, 도봉구, 노원구</td>
-          <td>모두가능</td>
-          <td>워딩 필요</td>
+          <td>서울특별시 강서구</td>
+          <td>자폐성 장애</td>
+          <td>120%이하</td>
         </tr>
         <tr>
           <td>120</td>
@@ -311,9 +313,9 @@
           <td>김하나</td>
           <td>여</td>
           <td>41</td>
-          <td>강북구, 도봉구, 노원구</td>
-          <td>모두가능</td>
-          <td>워딩 필요</td>
+          <td>서울특별시 강서구</td>
+          <td>자폐성 장애</td>
+          <td>120%이하</td>
         </tr>
         <tr>
           <td>120</td>
@@ -321,9 +323,9 @@
           <td>김하나</td>
           <td>여</td>
           <td>41</td>
-          <td>강북구, 도봉구, 노원구</td>
-          <td>모두가능</td>
-          <td>워딩 필요</td>
+          <td>서울특별시 강서구</td>
+          <td>자폐성 장애</td>
+          <td>120%이하</td>
         </tr>
         <tr>
           <td>120</td>
@@ -331,9 +333,9 @@
           <td>김하나</td>
           <td>여</td>
           <td>41</td>
-          <td>강북구, 도봉구, 노원구</td>
-          <td>모두가능</td>
-          <td>워딩 필요</td>
+          <td>서울특별시 강서구</td>
+          <td>자폐성 장애</td>
+          <td>120%이하</td>
         </tr>
         <tr>
           <td>120</td>
@@ -341,9 +343,9 @@
           <td>김하나</td>
           <td>여</td>
           <td>41</td>
-          <td>강북구, 도봉구, 노원구</td>
-          <td>모두가능</td>
-          <td>워딩 필요</td>
+          <td>서울특별시 강서구</td>
+          <td>자폐성 장애</td>
+          <td>120%이하</td>
         </tr>
         <tr>
           <td>120</td>
@@ -351,9 +353,9 @@
           <td>김하나</td>
           <td>여</td>
           <td>41</td>
-          <td>강북구, 도봉구, 노원구</td>
-          <td>모두가능</td>
-          <td>워딩 필요</td>
+          <td>서울특별시 강서구</td>
+          <td>자폐성 장애</td>
+          <td>120%이하</td>
         </tr>
         <tr>
           <td>120</td>
@@ -361,9 +363,9 @@
           <td>김하나</td>
           <td>여</td>
           <td>41</td>
-          <td>강북구, 도봉구, 노원구</td>
-          <td>모두가능</td>
-          <td>워딩 필요</td>
+          <td>서울특별시 강서구</td>
+          <td>자폐성 장애</td>
+          <td>120%이하</td>
         </tr>
       </tbody>
     </table>
@@ -385,44 +387,5 @@
     </div>
   </div>
 </div>
-
-<div style="display:flex;position:fixed;bottom:10px;right:10px;">
-  <button type="button" class="btn pop-btn pop3">팝업4</button>
-</div>
-
-<div class="popup pop3">
-  <div class="pop-box">
-    <div class="pop-title">
-      <h3>시/군/구 선택</h3>
-      <button type="button" class="btn pop-close"></button>
-    </div>
-    <div class="pop-body">
-      <div class="input-box info-input-box info-input-box3">
-        <div class="input">
-          <label for="6">시/도</label>
-          <select name="" id="" class="info-input">
-            <option value="">서울특별시</option>
-            <option value="">경기도</option>
-            <option value="">부산광역시</option>
-          </select>
-        </div>
-        <div class="input">
-          <label for="6">시/군구</label>
-          <select name="" id="" class="info-input">
-            <option value="">강남구</option>
-            <option value="">송파구</option>
-            <option value="">강북구</option>
-          </select>
-        </div>
-      </div>
-      <div class="btn-wrap j-center">
-        <button type="button" class="btn small close-btn">닫기</button>
-        <button type="button" class="btn small ok-btn">선택</button>
-
-      </div>
-    </div>
-  </div>
-</div>
-
 </body>
 </html>

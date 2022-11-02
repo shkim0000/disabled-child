@@ -69,8 +69,8 @@
           <p>강서구</p>
           <p>양천구</p>
           <div class="address-btn-box">
-            <button><img src="../img/plus.svg" alt=""></button>
-            <button><img src="../img/minus.svg" alt=""></button>
+            <button class="btn"><img src="../img/plus.svg" alt=""></button>
+            <button class="btn"><img src="../img/minus.svg" alt=""></button>
           </div>
         </div>
       </div>
@@ -230,17 +230,19 @@
 
   <div class="table-heading">
     <div>
-      <button>
-        <img src="../img/Excel-logo.svg" alt="엑셀로고">
-        <span>Excel 업로드</span>
-      </button>
-      <button>
-        <img src="../img/Excel-logo.svg" alt="엑셀로고">
-        <span>Excel 다운로드</span>
-      </button>
+      <div class="upload-filebox btn shadow">
+        <label for="upload-file"><img src="../img/Excel-logo.svg">Excel 업로드</label>
+        <input type="file" id="upload-file"> 
+      </div>
+      <div class="download-filebox btn shadow">
+        <a href="" download="">
+          <img src="../img/Excel-logo.svg" alt="엑셀로고">
+          <span>Excel 다운로드</span>
+        </a>
+      </div>
     </div>
     <div>
-      <button>
+      <button class="btn shadow">
         <span>3개월 이상 활동 공백 돌보미 찾기</span>
       </button>
       <select name="" id="" class="info-input">
@@ -410,10 +412,10 @@
 </div>
 
 <div style="display:flex;position:fixed;bottom:10px;right:10px;">
-  <button type="button" class="btn pop-btn pop3">팝업4</button>
+  <button type="button" class="btn pop-btn pop4">팝업4</button>
 </div>
 
-<div class="popup pop3">
+<div class="popup pop4">
   <div class="pop-box">
     <div class="pop-title">
       <h3>시/군/구 선택</h3>
@@ -422,7 +424,7 @@
     <div class="pop-body">
       <div class="input-box info-input-box info-input-box3">
         <div class="input">
-          <label for="6">시/도</label>
+          <label for="">시/도</label>
           <select name="" id="" class="info-input">
             <option value="">서울특별시</option>
             <option value="">경기도</option>
@@ -430,7 +432,7 @@
           </select>
         </div>
         <div class="input">
-          <label for="6">시/군구</label>
+          <label for="">시/군구</label>
           <select name="" id="" class="info-input">
             <option value="">강남구</option>
             <option value="">송파구</option>
