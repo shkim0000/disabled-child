@@ -200,19 +200,30 @@ h3.info-title { margin:20px 27px;}
 .info-input-box { display: flex; justify-content: space-between; align-items: center; max-width: 950px;}
 .info-input-box .input { display: flex; justify-content: flex-start; margin: 0;}
 .info-input-box .input input, .info-input-box .input select, .info-input { width: 108px;}
-.info-input-box .input select { border: 1px solid #D9D9D9; border-radius: 8px;}
+.info-input-box .input select  { border: 1px solid #D9D9D9; border-radius: 8px;}
 .info-input-box .input label { margin: 0 16px 0 0; line-height: 42px; }
 .info-input-box button.btn { width: 66px;}
 .age-input { margin: 0 16px; line-height: 42px;}
+.address-btn-box { position: absolute; bottom: 13px; right: 10px;}
+.address-btn-box button {  background: #fff; border: 1px solid #DBDBDB; border-radius: 3px; padding: 3px; }
+.address-btn-box button:first-child { margin-right: 8px; }
+.address-btn-box img { width: 14px; height: 14px;} 
 
 .info-details { display: flex;  margin-top: 25px; }
 .info-detail-item h4 { margin-bottom: 18px; margin-left: 16px;}
 .info-detail-box { border: 1px solid #dbdbdb;padding: 13px 16px; height: 170px; border-right: 0; }
 .info-detail-item:last-child .info-detail-box { border-right: 1px solid #dbdbdb;}
 .check-box2, .check-box3, .check-box4 { flex-direction: column; flex-wrap: wrap; align-items: flex-start;}
-.info-detail-item.adress { width: 110px; }
+.info-detail-item.adress { width: 110px; position: relative; }
 .info-detail-item.place { width:200px ;}
 .info-detail-item.target {  width: 305px;}
+.info-detail-item.wage {  width: 150px;}
+.info-detail-item.user-condition {  width: 150px;}
+.info-detail-item.user-condition2 {  width: 250px;}
+
+
+
+
 .info-detail-item.time { width: 395px; }
 .check-box3 { height: 100%; }
 .check-box4 .check { display: inline-block;}
@@ -224,6 +235,10 @@ h3.info-title { margin:20px 27px;}
 .check-box4 .total-time span:nth-child(2n-1) { text-decoration: underline;}
 .check-box4 .total-time span:last-child { color: #757575; font-size: 11px;}
 .check-box4 .input input { display: inline-block; border: 1px solid #D9D9D9; border-radius: 8px; padding: 8px; margin-left: 15px; width: 180px;}
+.btn.close-btn { background: #DBDBDB; }
+.info-input-box3 { align-items: flex-start; flex-direction: column;}
+.info-input-box3 .input:first-child { margin-bottom: 16px;}
+.info-input-box3 .input label { width: 90px; text-align: left; }
 
 .table-heading { display: flex; justify-content: space-between; margin-bottom: 15px;}
 .table-heading button { background-color: #fff; border: none; border-radius: 8px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); padding: 8px; }
@@ -237,6 +252,8 @@ h3.info-title { margin:20px 27px;}
 .pagpan span.active { text-decoration: underline; font-weight: 700;}
 
 .user-info-inner-wrap { display: flex;}
+.passwordbox { position: relative;}
+.passwordbox label::after { content:""; position: absolute; bottom: 13px; right: 13px; background: url(../img/password-delete.svg) no-repeat center; width: 15px; height: 15px; }
 
 /* 이용자 정보 */
 .tab-info { max-width: 300px; }
@@ -244,7 +261,7 @@ h3.info-title { margin:20px 27px;}
 .info-input-box2 { margin-top: 20px; justify-content: flex-start;}
 .info-input-box2 .input { margin-right: 20px;}
 .user-info-leftbox, .account-info-leftbox {margin-right: 150px;}
-.user-info-leftbox .input label, .user-info-rightbox .input label, .account-info-leftbox .input label, .account-info-rightbox .input label{ min-width: 90px;}
+.user-info-leftbox .input label, .user-info-rightbox .input label, .account-info-leftbox .input label, .account-info-rightbox .input label{ min-width: 100px;}
 
 .user-info-leftbox .input input { max-width: 190px;}
 .input-box.user-info-rightbox .input input { width: 290px;}

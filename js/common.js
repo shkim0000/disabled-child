@@ -16,7 +16,7 @@ $(function(){
             $(this).removeClass("on");
         }
     });
-    $(".popup .pop-close, .popup .ok-btn").on("click", function(){
+    $(".popup .pop-close, .popup .ok-btn, .popup .close-btn").on("click", function(){
         $("body").css("overflow","auto");
         $(this).parents(".popup").removeClass("on");
     });
