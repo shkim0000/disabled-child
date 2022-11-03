@@ -286,6 +286,7 @@ h3.info-title { margin:20px 27px;}
     .info-detail-item.adress, .info-detail-item.place, .info-detail-item.target, .info-detail-item.time, .info-detail-item.wage, .info-detail-item.user-condition, .info-detail-item.user-condition2  { width: 100%; }
     .info-detail-box { border-right: 1px solid var(--borderColor);}
     .info-input-box { flex-wrap: wrap; }
+
 }
 
 /* 이용자 정보 */
@@ -293,24 +294,32 @@ h3.info-title { margin:20px 27px;}
 .con-box2 { border-radius: 0 16px 16px 16px;}
 .info-input-box2 { margin-top: 20px; justify-content: flex-start;}
 .info-input-box2 .input { margin-right: 20px;}
-.user-info-leftbox, .account-info-leftbox {margin-right: 150px;}
-.user-info-leftbox .input label, .user-info-rightbox .input label, .account-info-leftbox .input label, .account-info-rightbox .input label{ min-width: 100px;}
 
-.user-info-leftbox .input input { max-width: 190px;}
-.input-box.user-info-rightbox .input input { width: 290px;}
-.input-box.user-info-rightbox .input textarea { width: 290px; }
+.info-input-box4 { display: flex; flex-wrap: wrap;}
+.info-input-box4 .input { min-width: 400px}
+.info-input-box4 .input:nth-child(2n-1)  {margin-right: 70px;}
+.info-input-box4 .input label { min-width: 100px;}
+.info-input-box4 .input input, .info-input-box4 .input textarea { max-width: 295px;}
+.info-input-box4 .password-wrap .passwordbox:first-child { margin: 0 0 24px 0;}
+.info-input-box4 .password-wrap { margin-right: 70px;}
+
+.active-info-wrap, .account-info-wrap { margin-top: 45px;}
+
 .textare-label { vertical-align: top; padding-top: 10px;}
 
-.active-info-wrap { margin-top: 40px;}
-.active-info-wrap .input-box .input input { margin-left: 20px; width: 190px;}
+@media (max-width:983px){
+    .info-input-box4 .input { width: 100%;}
+    .info-input-box4 .input:nth-child(2n-1) { margin-right: 0;}
+    .info-input-box4 .input input, .info-input-box4 .input textarea { max-width: calc(100% - 120px);}
+    .info-input-box4 .password-wrap { width: 100%; margin-right: 0;}
+    .info-input-box4 .passwordbox label::after { right: 25px;}
+    .account-info-wrap > div > div:nth-child(4) > select { width: calc(100% - 120px);}
+}
 
-.account-info-wrap { margin: 45px 0; }
-.account-info-wrap .input-box .input input, .account-info-wrap .input-box .input select { margin-left: 20px; width: 190px;}
-.account-info-wrap select { padding: 8px; border: 1px solid #dbdbdb; border-radius: 4px;}
-.button-wrap { display: flex; justify-content: end; max-width:900px ;}
-.con-inner-btn.btn { width: 66px;  }
+.info-input-box4 .input select {width: 295px; padding: 8px; border: 1px solid #dbdbdb; border-radius: 4px;}
+.button-wrap { display: flex; justify-content: end; max-width:900px ; margin-top: 30px;}
+.con-inner-btn.btn { width: 66px; font-size: 14px;}
 
-.account-info-inner-wrap { display: flex;}
 .info-wrap { margin-top: 45px;}
 
 
