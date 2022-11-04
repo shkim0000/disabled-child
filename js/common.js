@@ -10,6 +10,8 @@ $(function(){
             $(".popup.pop3").addClass("on");
         }else if($(this).hasClass("pop4")){
             $(".popup.pop4").addClass("on");
+        }else if($(this).hasClass("pop5")){
+            $(".popup.pop5").addClass("on");
         }
     });
     $(".popup").on("click", function(e){
