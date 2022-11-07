@@ -12,6 +12,22 @@ $(function(){
             $(".popup.pop4").addClass("on");
         }else if($(this).hasClass("pop5")){
             $(".popup.pop5").addClass("on");
+        }else if($(this).hasClass("pop6")){
+            $(".popup.pop6").addClass("on");
+        }else if($(this).hasClass("pop7")){
+            $(".popup.pop7").addClass("on");
+        }else if($(this).hasClass("pop8")){
+            $(".popup.pop8").addClass("on");
+        }else if($(this).hasClass("pop9")){
+            $(".popup.pop9").addClass("on");
+        }else if($(this).hasClass("pop10")){
+            $(".popup.pop10").addClass("on");
+        }else if($(this).hasClass("pop11")){
+            $(".popup.pop11").addClass("on");
+        }else if($(this).hasClass("pop12")){
+            $(".popup.pop12").addClass("on");
+        }else if($(this).hasClass("pop13")){
+            $(".popup.pop13").addClass("on");
         }
     });
     $(".popup").on("click", function(e){
