@@ -28,6 +28,8 @@ $(function(){
             $(".popup.pop12").addClass("on");
         }else if($(this).hasClass("pop13")){
             $(".popup.pop13").addClass("on");
+        }else if($(this).hasClass("pop14")){
+            $(".popup.pop14").addClass("on");
         }
     });
     $(".popup").on("click", function(e){
@@ -40,5 +42,23 @@ $(function(){
         $("body").css("overflow","auto");
         $(this).parents(".popup").removeClass("on");
     });
-    /* // 팝업 */
+
+    // 수료증 출력
+    $(".print-btn").on("click", function(){
+        window.print();
+        $("body").css("overflow","auto");
+        $(this).parents(".popup").removeClass("on");
+    });
+
+    // DatePicker
+    $( ".datepicker" ).datepicker({
+        dateFormat: 'yy.mm.dd',
+        showOn: "button",
+        buttonImage: "../img/down-arrow.svg",
+        buttonImageOnly: true,
+        buttonText: "Select date"
+        
+    });
+
+
 });

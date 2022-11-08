@@ -116,7 +116,7 @@ border-radius: 4px; padding: 10px; max-width: 295px;}
 .input-box > *{margin-bottom:24px;}
 .input-box > *:last-child{margin-bottom:0;}
 .input-box input[type=text], .input-box input[type=password]{width:100%;border:1px solid #dbdbdb;border-radius:4px;padding:10px;}
-.input-box textarea{width:100%;border:1px solid #dbdbdb;border-radius:4px;padding:10px;resize:none;}
+.input-box textarea{ width: 100%; border:1px solid #dbdbdb;border-radius:4px;padding:10px;resize:none;}
 .input-box label{display:inline-block;margin-bottom:8px;}
 .input-box input[type=date] { border: 1px solid var(--borderColor); cursor: pointer;}
 .input-box input.info-input { border-radius: 8px; }
@@ -136,6 +136,7 @@ border-radius: 4px; padding: 10px; max-width: 295px;}
 .upload-filebox label { color: #757575;font-weight: 500; font-size: 16px;}
 .upload-filebox input[type="file"] {  /* 파일 필드 숨기기 */
 position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;clip:rect(0,0,0,0); border: 0; }
+
 
 /* 팝업 */
 .popup{visibility:hidden;opacity:0;width:100%;height:100%;background:rgba(0,0,0,0.6);color:var(--popColor);position:fixed;top:0;left:0;z-index:100;transition:opacity 200ms;}
@@ -318,7 +319,7 @@ h3.info-title { margin:20px 27px;}
 @media (max-width:983px){
     .info-input-box4 .input { width: 100%;}
     .info-input-box4 .input:nth-child(2n-1) { margin-right: 0;}
-    .info-input-box4 .input input, .info-input-box4 .input textarea { max-width: calc(100% - 120px);}
+    .info-input-box4 .input input, .info-input-box4 .input textarea, .info-input-box5 .input .upload-file-wrap { max-width: calc(100% - 120px);}
     .info-input-box4 .password-wrap { width: 100%; margin-right: 0;}
     .info-input-box4 .passwordbox label::after { right: 25px;}
     .account-info-wrap > div > div:nth-child(4) > select { width: calc(100% - 120px);}
@@ -362,10 +363,53 @@ h3.info-title { margin:20px 27px;}
 .con-box5 { height: 750px; margin-top: 78px; position: relative;}
 .con-box5 .image-box { min-height:500px; min-width: 500px; border: 1px dashed #757575; border-radius: 16px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .con-box5 button {  position: absolute; right: 60px; bottom: 50px;}
-
 .table-heading .address-btn-box { position: initial;}
 
 
 /* SA-08-16 시스템 파라미터 관리 */
 .mark-box { width: 48px; height: 48px; margin: 0 auto; background: #d9d9d9;}
 
+/* SA-04-05 월간 서비스 계획*/
+.date-box { background: var(--offColor); min-height: 323px; text-align: center;}
+.date-box h1 { line-height: 323px;}
+
+.info-input-box5 .input textarea, .info-input-box5 .input .upload-file-wrap, .info-input-box5 .input .upload-file-wrap input  { min-width: 325px; }
+.info-input-box5 .input-textarea label { min-width: 80px;}
+.info-input-box5 .input { display: flex; justify-content: flex-start; margin: 0 20px 10px 0;}
+.info-input-box5 .input .upload-file-wrap input { margin-bottom: 10px;}
+.info-input-box5 .input .upload-file-wrap .btn-box .upload-filebox { margin-right: 20px;}
+.info-input-box5 .input .upload-file-wrap input.drag-drop-box { padding-left: 50px ; background: url(../img/drag-drop-icon.svg) no-repeat 10px center; }
+.info-input-box5 .input .upload-file-wrap .upload-filebox label { color: #fff; margin-bottom: 0;}
+
+@media (max-width:983px){
+    .info-input-box5 .input .upload-file-wrap { min-width: 100% ; }
+}
+
+
+/* SA-05-01 교육이수현황 조회 */
+.pop-box2 { width: 600px; height: 80vh; } 
+.pop-box2 .pop-body { padding: 30px 40px 16px;}
+.pop-box2 .pop-body h2 { padding: 3% 0 3% 0;}
+.pop-box2 .pop-body p { text-align: left; padding-bottom: 2%;}
+.pop-box2 .pop-body p:nth-child(5) { padding-bottom: 5%;}
+.pop-box2 .pop-body .certi-date {padding-top: 2%; }
+.pop-box2 .pop-body .certi-mark { width: fit-content; align-items: center; margin: 0 auto; margin-top: 4%;}
+.pop-box2 .pop-body .certi-mark h3 { margin-right: 15px;}
+.pop-box2 .pop-body .certi-mark .mark-box { border: 1px solid #6b7682;}
+
+
+
+/* 수료증 출력 */
+@media print {
+    header, .wrap, .pop-btn, .btn-wrap, .pop-title { display: none; }
+    .popup { position: static; }
+.pop-box2 .pop-body { padding: 60px 60px 16px;}
+.pop-box2 .pop-body h2 { padding: 60px 0 60px 0;}
+.pop-box2 .pop-body p { padding-bottom: 30px;}
+.pop-box2 .pop-body p:nth-child(5) { padding-bottom: 70px;}
+.pop-box2 .pop-body .certi-date {padding-top: 30px; }
+.pop-box2 .pop-body .certi-mark { margin-top: 45px;}
+}
+
+/* input datepicker */
+.ui-datepicker-trigger { position: relative;left: -23px;}
