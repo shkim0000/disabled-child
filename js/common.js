@@ -30,6 +30,10 @@ $(function(){
             $(".popup.pop13").addClass("on");
         }else if($(this).hasClass("pop14")){
             $(".popup.pop14").addClass("on");
+        }else if($(this).hasClass("pop15")){
+            $(".popup.pop15").addClass("on");
+        }else if($(this).hasClass("pop16")){
+            $(".popup.pop16").addClass("on");
         }
     });
     $(".popup").on("click", function(e){
@@ -43,12 +47,14 @@ $(function(){
         $(this).parents(".popup").removeClass("on");
     });
 
+
     // 수료증 출력
     $(".print-btn").on("click", function(){
         window.print();
         $("body").css("overflow","auto");
         $(this).parents(".popup").removeClass("on");
     });
+
 
     // DatePicker
     $( ".datepicker" ).datepicker({
@@ -57,7 +63,6 @@ $(function(){
         buttonImage: "../img/down-arrow.svg",
         buttonImageOnly: true,
         buttonText: "Select date"
-        
     });
 
 

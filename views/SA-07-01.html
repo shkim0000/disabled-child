@@ -34,15 +34,17 @@
 </header>
 
 <div class="wrap">
-  <h3 class="info-title">돌보미 급여 조회 > 급여 조회</h3>
+  <h3 class="info-title">게시판 > 공지사항</h3>
   <div class="con-box">
     <div class="input-box info-input-box">
       <div class="input">
-        <label for="">시행기관</label>
         <select name="" id="" class="info-input">
-          <option value="">전체</option>
+          <option value="">제목</option>
           <option value=""></option>
         </select>
+      </div>
+      <div class="input">
+        <input type="text" id="" class="info-input info-input-title">
       </div>
       <div class="input">
         <label for="">서비스 기간</label>
@@ -50,11 +52,7 @@
         <span class="age-input"> ~ </span>
         <input type="text" id="" class="info-input datepicker">
       </div>
-      <div class="input">
-        <label for="">돌보미 성명</label>
-        <input type="text" id="" class="info-input">
-      </div>
-      <button class="btn">조회</button>
+      <button class="btn">검색</button>
     </div>
   </div>
 
@@ -79,87 +77,91 @@
       </select>
     </div>
   </div>
-  <div class="table-wrap color-table table5">
-    <table>
-      <thead>
-        <tr>
-          <th>연변</th>
-          <th>시행기관</th>
-          <th>날짜</th>
-          <th>돌보미</th>
-          <th>생년월일</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td colspan="5">
-            <p>검색된 내용이 없습니다.</p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
 
   <div class="table-wrap color-table table6">
     <table>
       <thead>
         <tr>
-          <th>연변</th>
-          <th>시행기관</th>
-          <th>날짜</th>
-          <th>급여총액</th>
-          <th>돌보미</th>
-          <th>생년월일</th>
+          <th>번호</th>
+          <th class="notice-table-title">제목</th>
+          <th>글쓴이</th>
+          <th>작성일자</th>
+          <th>조회</th>
+          <th>첨부파일</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>111</td>
-          <td>서울</td>
-          <td>2022.05</td>
-          <td>1,500,000원</td>
-          <td>김하나</td>
-          <td>2000.01.01</td>
+          <td class="notice-table-title"><span class="notice-tag middle">중앙</span>“중앙” 공지태그는 지원기관만 사용할 수 있음</td>
+          <td>중앙</td>
+          <td>2022.06.25</td>
+          <td>1</td>
+          <td><img src="../img/green-arrow.svg" alt=""></td>
         </tr>
         <tr>
           <td>111</td>
-          <td>서울</td>
-          <td>2022.05</td>
-          <td>1,500,000원</td>
-          <td>김하나</td>
-          <td>2000.01.01</td>
+          <td class="notice-table-title"><span class="notice-tag seoul">서울</span>각 시행기관은 지역 공지태그가 붙음</td>
+          <td>중앙</td>
+          <td>2022.06.25</td>
+          <td>1</td>
+          <td><img src="../img/green-arrow.svg" alt=""></td>
         </tr>
         <tr>
           <td>111</td>
-          <td>서울</td>
-          <td>2022.05</td>
-          <td>1,500,000원</td>
-          <td>김하나</td>
-          <td>2000.01.01</td>
+          <td class="notice-table-title"><span class="notice-tag gyeonggi">경기</span>각 시행기관은 지역 공지태그가 붙음</td>
+          <td>중앙</td>
+          <td>2022.06.25</td>
+          <td>1</td>
+          <td><img src="../img/green-arrow.svg" alt=""></td>
         </tr>
         <tr>
           <td>111</td>
-          <td>서울</td>
-          <td>2022.05</td>
-          <td>1,500,000원</td>
-          <td>김하나</td>
-          <td>2000.01.01</td>
+          <td class="notice-table-title">공지는 공지 유형에 따라 돌보미, 이용자가 볼 수 있는 권한이 다릅니다.</td>
+          <td>중앙</td>
+          <td>2022.06.25</td>
+          <td>1</td>
+          <td>-</td>
         </tr>
         <tr>
           <td>111</td>
-          <td>서울</td>
-          <td>2022.05</td>
-          <td>1,500,000원</td>
-          <td>김하나</td>
-          <td>2000.01.01</td>
+          <td class="notice-table-title">글을 작성 할 때 공지 유형에 따라</td>
+          <td>중앙</td>
+          <td>2022.06.25</td>
+          <td>1</td>
+          <td><img src="../img/green-arrow.svg" alt=""></td>
         </tr>
         <tr>
           <td>111</td>
-          <td>서울</td>
-          <td>2022.05</td>
-          <td>1,500,000원</td>
-          <td>김하나</td>
-          <td>2000.01.01</td>
+          <td class="notice-table-title">돌보미만 보거나</td>
+          <td>중앙</td>
+          <td>2022.06.25</td>
+          <td>1</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>111</td>
+          <td class="notice-table-title">이용자만 보거나</td>
+          <td>중앙</td>
+          <td>2022.06.25</td>
+          <td>1</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>111</td>
+          <td class="notice-table-title">양쪽 다 볼 수 있습니다.</td>
+          <td>중앙</td>
+          <td>2022.06.25</td>
+          <td>1</td>
+          <td><img src="../img/green-arrow.svg" alt=""></td>
+        </tr>
+        <tr>
+          <td>111</td>
+          <td class="notice-table-title">광주공지</td>
+          <td>중앙</td>
+          <td>2022.06.25</td>
+          <td>1</td>
+          <td>-</td>
         </tr>
       </tbody>
     </table>
@@ -179,6 +181,7 @@
       <a href="javascript:void(0);"><span>10</span></a>
       <a href="javascript:void(0);"><span><img src="../img/right-arrow.jpg" alt=""></span></a>
       <a href="javascript:void(0);"><span><img src="../img/right-double-arrow.svg" alt=""></span></a>
+      <button class="btn small">글쓰기</button>
     </div>
   </div>
 </div>
