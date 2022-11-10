@@ -34,6 +34,10 @@ $(function(){
             $(".popup.pop15").addClass("on");
         }else if($(this).hasClass("pop16")){
             $(".popup.pop16").addClass("on");
+        }else if($(this).hasClass("pop17")){
+            $(".popup.pop17").addClass("on");
+        }else if($(this).hasClass("pop18")){
+            $(".popup.pop18").addClass("on");
         }
     });
     $(".popup").on("click", function(e){

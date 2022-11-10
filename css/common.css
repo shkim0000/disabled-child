@@ -69,7 +69,7 @@ table tbody tr:hover td { background: #F5F5F5;}
 }
 
 /* 헤더 */
-header{width:100%;height:68px;background:var(--whiteColor);border-bottom:1px solid var(--borderColor);position:sticky;top:0;left:0;}
+header{width:100%;height:68px;background:var(--whiteColor);border-bottom:1px solid var(--borderColor);position:sticky;top:0;left:0; z-index: 999;}
 header .wrap{height:100%;}
 header .menu{height:100%;display:flex;justify-content:center;align-items:center;}
 header .menu > li{color:var(--subColor);margin-right:40px;}
@@ -139,7 +139,6 @@ border-radius: 4px; padding: 10px; max-width: 295px;}
 .upload-filebox input[type="file"] {  /* 파일 필드 숨기기 */
 position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;clip:rect(0,0,0,0); border: 0; }
 
-
 /* 팝업 */
 .popup{visibility:hidden;opacity:0;width:100%;height:100%;background:rgba(0,0,0,0.6);color:var(--popColor);position:fixed;top:0;left:0;z-index:100;transition:opacity 200ms;}
 .popup.on{visibility:visible;opacity:1;}
@@ -167,7 +166,7 @@ position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow:
 .notice-tag.gyeonggi { background: #68B8E5;}
 
 
-/* ========== 페이지 스타일 시작 ========= */
+/* =============== 페이지 스타일 시작 ============== */
 
 /* 로그인 */
 .login-box{width:620px;border:1px solid var(--borderColor);border-radius:8px;padding:60px 120px;position:fixed;top:50%;left:50%;transform:translate(-50%, -50%);}
@@ -231,6 +230,7 @@ position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow:
     .tables-wrap { display: block;}
     .tables-wrap .con-box { max-width: 100%; }
 }
+
 /* 돌보미 정보 */
 .SA-08-xx .con-box { box-shadow: none; margin-bottom: 0;}
 h3.info-title { margin:20px 27px;}
@@ -275,7 +275,6 @@ h3.info-title { margin:20px 27px;}
 .info-input-box3 .input label { width: 90px; text-align: left; }
 
 .table-heading { display: flex; justify-content: space-between; margin-bottom: 15px;}
-
 .table-heading button { display: inline-block;}
 .table-heading button, .table-heading .upload-filebox { margin-right: 15px;}
 .table-heading select.info-input { padding:9px; border: 1px solid #D9D9D9; border-radius: 8px;}
@@ -345,11 +344,12 @@ h3.info-title { margin:20px 27px;}
 /* SA-08-05, SA-08-06 서비스 모니터링 */
 .service-info-wrap .input:last-child { width: 100%; }
 .service-info-wrap .input.input-textarea, .info-wrap .input-box .input-full, .service-info-wrap .input-box .input-full { width: 100%; }
-.service-info-wrap .info-input-box4 .input textarea, .rating-info-wrap .info-input-box4 .input:last-child input, .info-wrap .input-box .input-full input { max-width: 760px; }
+.service-info-wrap .info-input-box4 .input textarea, .rating-info-wrap .info-input-box4 .input:last-child input, .info-wrap .input-box .input-full input, .input-box .input-full .comment-add-box { max-width: 760px; }
 .rating-info-wrap .info-input-box4 { flex-direction: column;}
 
 @media (max-width:983px) {
-.service-info-wrap .info-input-box4 .input textarea, .rating-info-wrap .info-input-box4 .input:last-child input, .info-wrap .input-box .input-full input { max-width: calc(100% - 120px); }
+.service-info-wrap .info-input-box4 .input textarea, .rating-info-wrap .info-input-box4 .input:last-child input, .info-wrap .input-box .input-full input, .input-box .input-full .comment-add-box { max-width: calc(100% - 120px); }
+.input-box .comment-box { max-width: calc(100% - 140px);}
 }
 
 /* SA-08-07 지역현황 */
@@ -427,7 +427,8 @@ h3.info-title { margin:20px 27px;}
 
 /* 공지사항 */
 .info-input-box .input .info-input.info-input-title { width:347px ;}
-.table-wrap.color-table td + .notice-table-title { text-align: left;}
+.table-wrap.color-table td .notice-table-title { text-align: left;}
+.table-wrap.color-table 
 .pagpan { position: relative;}
 .pagpan button { position: absolute; right: 15px; bottom: 15px;}
 hr { max-width: 953px; background: #d9d9d9; }
@@ -444,3 +445,11 @@ hr { max-width: 953px; background: #d9d9d9; }
 .upload-file-wrap > input { display: block;}
 .wrap.SA-07-03 .input-box { margin-bottom: 20px;}
 .wrap.SA-07-03 .info-input-box5 { margin-top: 40px;}
+
+/* 커뮤니티 */
+.comment-add-box { display: inline-flex; width: 100%;}
+.comment-box { max-width: 740px; border: 1px solid #DBDBDB; border-radius: 6px; margin: 20px 0 0 125px; font-size: 14px;padding: 15px 30px; position: relative; }
+.comment-box button { position: absolute; top: 15px; right: 15px; padding: 5px;}
+.comment-box p:nth-child(3) { font-size: 12px; }
+
+.service-info-wrap .input.input-textarea, .info-wrap .input-box .input-full, .service-info-wrap .input-box .input-full { margin-right: 0;}
