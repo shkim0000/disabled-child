@@ -131,6 +131,7 @@ border-radius: 4px; padding: 10px; max-width: 295px;}
 .btn.off{background:var(--offColor);}
 .btn.shadow { width: auto; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08); border-radius: 8px; background: var(--whiteColor); padding: 8px; color: var(--subColor); font-weight: 500;
     font-size: 16px;}
+.btn.xsmall { width: auto; padding: 5px 12px; font-size: 14px;}
 
 /*엑셀 업로드.다운로드 버튼 */
 .upload-filebox, .download-filebox { display: inline-block;}
@@ -430,7 +431,9 @@ h3.info-title { margin:20px 27px;}
 .table-wrap.color-table td .notice-table-title { text-align: left;}
 .table-wrap.color-table 
 .pagpan { position: relative;}
-.pagpan button { position: absolute; right: 15px; bottom: 15px;}
+.pagpan .right-side-btn { position: absolute; right: 15px; bottom: 20px;}
+.pagpan .left-side-btn { position: absolute; left: 15px; bottom: 20px;}
+.pagpan .left-side-btn button:first-child { margin-right: 12px;}
 hr { max-width: 953px; background: #d9d9d9; }
 .input-box .input-full input.title-input { border: none; font-size: 20px; max-width: 958px;}
 .input-box .input .info-input2 { width: 185px;}
@@ -451,5 +454,11 @@ hr { max-width: 953px; background: #d9d9d9; }
 .comment-box { max-width: 740px; border: 1px solid #DBDBDB; border-radius: 6px; margin: 20px 0 0 125px; font-size: 14px;padding: 15px 30px; position: relative; }
 .comment-box button { position: absolute; top: 15px; right: 15px; padding: 5px;}
 .comment-box p:nth-child(3) { font-size: 12px; }
-
 .service-info-wrap .input.input-textarea, .info-wrap .input-box .input-full, .service-info-wrap .input-box .input-full { margin-right: 0;}
+
+
+/* 1:1 문의 */
+@media (max-width:983px){
+    .pagpan .left-side-btn { flex-direction: column; bottom: 5px; }
+    .pagpan .left-side-btn button:first-child { margin-bottom: 3px;}
+}
