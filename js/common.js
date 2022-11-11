@@ -38,6 +38,14 @@ $(function(){
             $(".popup.pop17").addClass("on");
         }else if($(this).hasClass("pop18")){
             $(".popup.pop18").addClass("on");
+        }else if($(this).hasClass("pop19")){
+            $(".popup.pop19").addClass("on");
+        }else if($(this).hasClass("pop20")){
+            $(".popup.pop20").addClass("on");
+        }else if($(this).hasClass("pop21")){
+            $(".popup.pop21").addClass("on");
+        }else if($(this).hasClass("pop22")){
+            $(".popup.pop22").addClass("on");
         }
     });
     $(".popup").on("click", function(e){
