@@ -103,7 +103,8 @@ header .member-box .btn{margin-left:24px;}
 .second-menu > li { text-align: left; padding: 14px 0 14px 24px; color: #8f8f8f;}
 .second-menu > li.on { color: #424242; }
 .second-menu > li > a { width:100%; display: inline-block; padding-right: 20px; }
-.second-menu > li > a > img { float: right; margin-top: 9px;}
+.second-menu > li > a > img { float: right; margin-top: 9px; transition: all .3s;}
+.second-menu > li:hover > a > img { transform: rotate(180deg);}
 .second-menu::after { content: ''; position: absolute; top: -24px; left: 0; background: var(--whiteColor); width: 204px; height: calc(100vh - 50px); border-radius: 0 16px 16px 0; border: 1px solid var(--borderColor); z-index: -1; }
 .third-menu { margin-top: 18px; display: none; }
 /* .third-menu.on {max-height: 500px;} */
@@ -112,8 +113,8 @@ header .member-box .btn{margin-left:24px;}
 .third-menu > li > a { padding-left: 14px;}
 .main-menu > li > a { position: relative;}
 .icon-focus {position: absolute; top: -7%; left: 0; visibility: hidden; transform:scale(1.1)}
-.main-menu li a:hover .icon-focus, .main-menu li a:focus .icon-focus { visibility: visible;}
-.main-menu li a:hover img, .main-menu li a:focus { visibility: hidden;}
+.main-menu > li > a:hover > .icon-focus, .main-menu > li > a:focus > .icon-focus { visibility: visible;}
+.main-menu > li > a:hover > img, .main-menu > li > a:focus { visibility: hidden;}
 
 .main-menu > li.on > a { background: red;}
 .second-menu.on { display: block;}
