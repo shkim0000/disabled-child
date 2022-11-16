@@ -78,17 +78,52 @@ $(function(){
     });
 
     // 사이드메뉴
-    $(".main-menu > li").on("click", function(){
-        $(this).find(".second-menu").toggleClass("on");
+    $(".second-menu").slideUp(0);
+    $(".third-menu").slideUp(0);
+    $('.div.sub-menu-bg').removeClass('on');
+
+    $("ul.main-menu > li > a").on("click", function(){
+        if($(this).next().length >= 1){
+            if(!$(this).hasClass("on")){
+                $('ul.main-menu > li > a').removeClass('on')
+                $(this).addClass("on");
+                $('ul.second-menu').removeClass('on').slideUp(0);
+                $(this).next().addClass('on').slideDown(500);
+                $('ul.second-menu > li > a').removeClass('on');
+                $('ul.third-menu').slideUp(0)
+                $('div.sub-menu-bg').addClass('on');
+
+            }else{
+                $(this).removeClass("on");
+                $('ul.second-menu').removeClass('on') 
+                $(this).next().removeClass('on').slideUp(500);
+                $('div.sub-menu-bg').removeClass('on');
+            }
+        } else {
+            $('ul.main-menu > li > a').removeClass('on')
+            $("ul.second-menu").removeClass('on').slideUp(0);
+            $('div.sub-menu-bg').removeClass('on');
+        }
     });
-    $(".second-menu > li").hover(function(){
-        $(this).find(".third-menu").stop().slideToggle(1000);
-    });
-    
+
+    // 3뎁스
+    $("ul.second-menu > li > a").on("click", function() {
+        if($(this).next().length >= 1){
+            if(!$(this).hasClass("on")){
+                $('ul.second-menu > li > a').removeClass('on')
+                $(this).addClass("on");
+                $('ul.third-menu').slideUp(500);
+                $(this).next().slideDown(500);
+            }else{
+                $(this).removeClass("on");
+                $('ul.second-menu > li > a').removeClass('on')
+                $(this).next().slideUp(500);
+            }
+        }
+
+    })
 
 
-
-    console.log($(".second-menu > li"))
 
     
         // $('ul.main-menu > li > a').on('click', function() {
