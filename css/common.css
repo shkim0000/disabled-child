@@ -81,6 +81,7 @@ header .member-box .btn{margin-left:24px;}
 
 @media (max-width:1400px){
     header .menu{justify-content:flex-start;}
+    .wrap{width:calc(100% - 100px);padding:20px;margin-left:100px;}
 }
 
 @media (max-width:1080px){
@@ -273,7 +274,6 @@ position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow:
 .tables-wrap3.color-table tr th:last-child { border-right: 1px solid var(--whiteColor);}
 
 @media (max-width:1180px){
-    .wrap { padding: 0 20px; }
     .con-box.con-box2 { border-radius: 16px; }
     .tables-wrap3 { flex-direction: column;}
     .tables-wrap3 table:nth-child(2) thead, .tables-wrap3 table:nth-child(3) thead { display: none;}
