@@ -77,5 +77,69 @@ $(function(){
         buttonText: "Select date"
     });
 
+    // 사이드메뉴
+    $(".main-menu > li").on("click", function(){
+        $(this).find(".second-menu").toggleClass("on");
+    });
+    $(".second-menu > li").hover(function(){
+        $(this).find(".third-menu").stop().slideToggle(1000);
+    });
+    
+
+
+
+    console.log($(".second-menu > li"))
+
+    
+        // $('ul.main-menu > li > a').on('click', function() {
+        //     var index = $(this).parent().index();
+        //     $('ul.third-menu').removeClass('on');
+        //     $('div.sub-menu-bg').toggleClass('on');
+        //     $('ul.second-menu:eq('+ (index - 1) +')').toggleClass('on');
+
+        //     해당하는 ul.second가 있으면 보여주기
+        //     if($('ul.main-menu > li:eq('+ index +') >ul.second-menu').length) {
+        //         // $('ul.second-menu').removeClass('on');
+        //         // $('ul.second-menu:eq('+ (index - 1) +')').addClass('on');
+        //         // $('ul.third-menu').removeClass('on');
+        //         // $('div.sub-menu-bg').addClass('on');
+
+        //         두번클릭했을 때 사이드 메뉴가 닫혀야 함
+        //         if($('ul.second-menu:eq('+ (index - 1) +')').outerHeight(true)) {
+        //             console.log('dkfjkdjk')
+        //             $('ul.main-menu > li > a').on('click', function() {
+        //                 console.log('dksjfkjafdkljsdlkjkldsjflksjdkfj');
+        //                 // $('ul.second-menu:eq('+ (index - 1) +')').toggleClass('on');
+        //                 // $('ul.third-menu').toggleClass('on');
+        //                 // $('div.sub-menu-bg').toggleClass('on');
+        //             })
+        //         }
+
+
+
+         // 3번째 뎁스
+        //         $('ul.second-menu:eq('+ (index - 1) +') > li > a').on('click', function() {
+        //         var idx = $(this).parent().index();
+        //             if(index === 1) {
+        //                 if($('ul.second-menu:eq('+ (index - 1) +') > li:eq('+idx+') > ul.third-menu').length) {
+        //                     $('ul.third-menu').addClass('on');
+        //                 } else {
+        //                     $('ul.third-menu').removeClass('on');
+        //                 }
+
+        //             } else {
+        //                 $('ul.second-menu:eq('+ (index - 1) +') > li > ul.third-menu').removeClass('on');
+        //                 $('ul.second-menu:eq('+ (index - 1) +') > li > ul.third-menu:eq('+idx+')').addClass('on');
+        //             }
+        //         });
+        //     } else {
+        //         $('div.sub-menu-bg').removeClass('on')
+        //         $('ul.second-menu').removeClass('on');
+        //         $('ul.third-menu').removeClass('on');
+        //     }
+        // });
+
+
+    
 
 });
