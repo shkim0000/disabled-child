@@ -5,9 +5,9 @@ $(function(){
         $("body").prepend(
           "<div class='side-menu'>\n" +
           "    <ul class='main-menu'>\n" +
-          "        <li><a href='#'><img src='../img/home-icon.svg' alt=''><img src='../img/home-wt-icon.svg' class='icon-focus'></a>\n" +
+          "        <li><a href='#'><img src='../img/home-icon.svg' alt=''><img src='../img/home-wt-icon.svg' class='icon-focus'><span class='title only-tablet'>대시보드</span></a>\n" +
           "        </li>\n" +
-          "        <li><a href=#><img src='../img/group-icon.svg' alt=''><img src='../img/group-wt-icon.svg' class='icon-focus'></a>\n" +
+          "        <li><a href=#><img src='../img/group-icon.svg' alt=''><img src='../img/group-wt-icon.svg' class='icon-focus'><span class='title only-tablet'>돌봄 서비스</span></a>\n" +
           "            <ul class='second-menu'>\n" +
           "                <li><a href='#'>배정조회</a></li>\n" +
           "                <li><a href='#'>서비스 관리<img src='../img/down-arrow.svg'></a>\n" +
@@ -18,24 +18,24 @@ $(function(){
           "                </li>\n" +
           "            </ul>\n" +
           "        </li>\n" +
-          "        <li><a href='#'><img src='../img/assign-icon.svg' alt=''><img src='../img/assign-wt-icon.svg' class='icon-focus'></a>\n" +
+          "        <li><a href='#'><img src='../img/assign-icon.svg' alt=''><img src='../img/assign-wt-icon.svg' class='icon-focus'><span class='title only-tablet'>교육의수</span></a>\n" +
           "            <ul class='second-menu'>\n" +
           "                <li><a href='#'>교육이수현황 조회</a></li>\n" +
           "            </ul>\n" +
           "        </li>\n" +
-          "        <li><a href='#'><img src='../img/find-icon.svg' alt=''><img src='../img/find-wt-icon.svg' class='icon-focus'></a>\n" +
+          "        <li><a href='#'><img src='../img/find-icon.svg' alt=''><img src='../img/find-wt-icon.svg' class='icon-focus'><span class='title only-tablet'>돌보미 급여조회</span></a>\n" +
           "            <ul class='second-menu'>\n" +
           "                <li><a href='#'>급여 조회</a></li>\n" +
           "            </ul>\n" +
           "        </li>\n" +
-          "        <li><a href='#'><img src='../img/note-icon.svg' alt=><img src='../img/note-wt-icon.svg' class='icon-focus'></a>\n" +
+          "        <li><a href='#'><img src='../img/note-icon.svg' alt=><img src='../img/note-wt-icon.svg' class='icon-focus'><span class='title only-tablet'>게시판</span></a>\n" +
           "            <ul class='second-menu'>\n" +
           "                <li><a href='#'>공지사항</a></li>\n" +
           "                <li><a href='#'>커뮤니티</a></li>\n" +
           "                <li><a href='#'>1:1문의</a></li>\n" +
           "            </ul>\n" +
           "        </li>\n" +
-          "        <li><a href='#'><img src='../img/setting-icon.svg' alt=''><img src='../img/setting-wt-icon.svg' class='icon-focus'></a>\n" +
+          "        <li><a href='#'><img src='../img/setting-icon.svg' alt=''><img src='../img/setting-wt-icon.svg' class='icon-focus'><span class='title only-tablet'>관리자페이지</span></a>\n" +
           "            <ul class='second-menu'>\n" +
           "                <li><a href='#'>서비스현황<img src='../img/down-arrow.svg'></a>\n" +
           "                    <ul class='third-menu'>\n" +
@@ -195,60 +195,55 @@ $(function(){
             }
         }
 
-    })
+    });
 
+     //모바일버전
+    // width사이즈를 측정해서 resize 체크해야함.
+    var screenWidth = $(window).width();
 
+    if (screenWidth > 1440) {
+        $('div.side-menu').removeClass('on');
+    }
 
-    
-        // $('ul.main-menu > li > a').on('click', function() {
-        //     var index = $(this).parent().index();
-        //     $('ul.third-menu').removeClass('on');
-        //     $('div.sub-menu-bg').toggleClass('on');
-        //     $('ul.second-menu:eq('+ (index - 1) +')').toggleClass('on');
+    $('a.hamburger-button').on('click', function() {
+        $('div.side-menu').toggleClass('on');
+        if($('div.side-menu').hasClass('on')) {
+            $('a.hamburger-button').addClass('close');
+            
+        } else {
+            $('a.hamburger-button').removeClass('close');
+            // 열고 닫을 때 화면 정리해주기
+            $('div.side-menu > ul.main-menu > li > a').removeClass('on')
+            $('ul.second-menu').slideUp(500)
+            $('ul.second-menu > li > a').removeClass('on');
+            $('ul.third-menu').slideUp(500);
+        }
+    });
 
-        //     해당하는 ul.second가 있으면 보여주기
-        //     if($('ul.main-menu > li:eq('+ index +') >ul.second-menu').length) {
-        //         // $('ul.second-menu').removeClass('on');
-        //         // $('ul.second-menu:eq('+ (index - 1) +')').addClass('on');
-        //         // $('ul.third-menu').removeClass('on');
-        //         // $('div.sub-menu-bg').addClass('on');
+    $(window).resize(function() {
+        var screenWidth = $(window).width();
 
-        //         두번클릭했을 때 사이드 메뉴가 닫혀야 함
-        //         if($('ul.second-menu:eq('+ (index - 1) +')').outerHeight(true)) {
-        //             console.log('dkfjkdjk')
-        //             $('ul.main-menu > li > a').on('click', function() {
-        //                 console.log('dksjfkjafdkljsdlkjkldsjflksjdkfj');
-        //                 // $('ul.second-menu:eq('+ (index - 1) +')').toggleClass('on');
-        //                 // $('ul.third-menu').toggleClass('on');
-        //                 // $('div.sub-menu-bg').toggleClass('on');
-        //             })
-        //         }
+        if(screenWidth > 1400) {
+            // 1400 이상이면 모바일 버전 정리해
+            $('div.side-menu').removeClass('on');
+            $('div.sub-menu-bg').removeClass('on');
+            $('a.hamburger-button').removeClass('close');
+            resetNav();
+        } else {
+            // 1400보다 작으면 pc버전 정리해
+            $('div.sub-menu-bg').removeClass('on');
+            resetNav();
+        }
 
+        
+    });
 
-
-         // 3번째 뎁스
-        //         $('ul.second-menu:eq('+ (index - 1) +') > li > a').on('click', function() {
-        //         var idx = $(this).parent().index();
-        //             if(index === 1) {
-        //                 if($('ul.second-menu:eq('+ (index - 1) +') > li:eq('+idx+') > ul.third-menu').length) {
-        //                     $('ul.third-menu').addClass('on');
-        //                 } else {
-        //                     $('ul.third-menu').removeClass('on');
-        //                 }
-
-        //             } else {
-        //                 $('ul.second-menu:eq('+ (index - 1) +') > li > ul.third-menu').removeClass('on');
-        //                 $('ul.second-menu:eq('+ (index - 1) +') > li > ul.third-menu:eq('+idx+')').addClass('on');
-        //             }
-        //         });
-        //     } else {
-        //         $('div.sub-menu-bg').removeClass('on')
-        //         $('ul.second-menu').removeClass('on');
-        //         $('ul.third-menu').removeClass('on');
-        //     }
-        // });
-
-
-    
+    function resetNav() {
+        $('div.side-menu > ul.main-menu > li > a').removeClass('on')
+        $('ul.second-menu').removeClass('on');
+        $('ul.second-menu').slideUp(500);
+        $('ul.second-menu > li > a').removeClass('on');
+        $('ul.third-menu').slideUp(500);  
+    }
 
 });
