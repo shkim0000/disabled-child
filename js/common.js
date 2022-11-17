@@ -157,6 +157,7 @@ $(function(){
     $('.div.sub-menu-bg').removeClass('on');
 
     $("ul.main-menu > li > a").on("click", function(){
+        console.log('클릭중')
         if($(this).next().length >= 1){
             if(!$(this).hasClass("on")){
                 $('ul.main-menu > li > a').removeClass('on')
