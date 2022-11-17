@@ -98,7 +98,7 @@ header .member-box .btn{margin-left:24px;}
     a.hamburger-button.close > span {opacity: 0;}
 
     /* 사이드메뉴 */
-    div.side-menu {width: 100%; border-radius: 0; left: 100%; transition: left 0.5s;}
+    div.side-menu {width: 100%; overflow-y: scroll; border-radius: 0; left: 100%; transition: left 0.5s;}
     div.side-menu.on {left: 0;}
     span.bar::after {top: 36px;}
     div.side-menu > ul {margin-top: 0;}
