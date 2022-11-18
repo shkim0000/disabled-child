@@ -1,0 +1,908 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>장애아가족 양육지원사업</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../lib/jquery-ui-1.13.2.custom/jquery-ui.min.css">
+
+  <!-- js & lib -->
+  <script src="../lib/jquery-3.6.1/jquery-3.6.1.js"></script>
+  <script src="../lib/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+  <script src="../js/common.js"></script>
+
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <ul class="menu">
+      <li class="on"><a href="#">Dash Board</a></li>
+      <li><a href="#">돌봄 서비스</a></li>
+      <li><a href="#">교육의수</a></li>
+      <li><a href="#">돌보미 급여조회</a></li>
+      <li><a href="#">게시판</a></li>
+      <li><a href="#">관리자페이지</a></li>
+    </ul>
+    <div class="member-box">
+      <p><span>(중앙)</span> 홍길동(kim0001)</p>
+      <a href="#" class="btn line">로그아웃</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <h3 class="info-title">관리자 페이지 > 사업 실적> 휴식지원프로그램 현황</h3>
+  <div class="con-box">
+    <div class="input-box info-input-box">
+      <div class="input">
+        <label for="">기간</label>
+        <input type="text" id="" class="info-input datepicker">
+      </div>
+
+      <div class="input">
+        <label for="">실적 유형</label>
+        <select name="" id="" class="info-input">
+          <option value="">돌보미 활동</option>
+          <option value=""></option>
+        </select>
+      </div>
+      <button class="btn">조회</button>
+    </div>
+  </div>
+
+  <div class="table-heading">
+    <div>
+      <div class="download-filebox btn shadow">
+        <a href="" download="">
+          <img src="../img/Excel-logo.svg" alt="엑셀로고">
+          <span>Excel 다운로드</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>돌보미 관리</h3>
+    <div class="table-wrap color-table multi-table">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="3">기관</th>
+                    <th rowspan="3">전월<br />ⓚ</th>
+                    <th colspan="4">소수 돌보미수(신규)</th>
+                    <th colspan="4">소속 이탈 돌보미수</th>
+                    <th rowspan="3">실소속<br />ⓚ+ⓛ-ⓜ</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">양성교육<br />수료<br />(실습 포함)</th>
+                    <th rowspan="2">양성교육<br />면제</th>
+                    <th rowspan="2">이탈 후<br />활동재개</th>
+                    <th rowspan="2">합계<br />ⓛ</th>
+                    <th colspan="2">활동중지</th>
+                    <th rowspan="2">자의<br />활동포기</th>
+                    <th rowspan="2">합계<br />ⓜ</th>
+                </tr>
+                <tr>
+                    <th>활동중지<br />(1년 이내)</th>
+                    <th>자격취소</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>서울</td>
+                    <td>315</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>319</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>315</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>319</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>315</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>319</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>315</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>319</td>
+                </tr>
+                <tr>
+                    <td>계</td>
+                    <td>3,186</td>
+                    <td>41</td>
+                    <td>34</td>
+                    <td>8</td>
+                    <td>83</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>3,254</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box circle">
+      <h3>신규 돌보미</h3>
+      <div class="table-wrap circle">
+        <div class="circle-table"></div>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>서울</li>
+          <li><span class="color"></span>부산</li>
+          <li><span class="color"></span>대구</li>
+          <li><span class="color"></span>인천</li>
+          <li><span class="color"></span>광주</li>
+          <li><span class="color"></span>대전</li>
+          <li><span class="color"></span>울산</li>
+          <li><span class="color"></span>세종</li>
+          <li><span class="color"></span>경기</li>
+        </ul>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>강원</li>
+          <li><span class="color"></span>충남</li>
+          <li><span class="color"></span>충북</li>
+          <li><span class="color"></span>경남</li>
+          <li><span class="color"></span>경북</li>
+          <li><span class="color"></span>전남</li>
+          <li><span class="color"></span>전북</li>
+          <li><span class="color"></span>제주</li>
+        </ul>
+        
+      </div>
+    </div>
+    <div class="con-box circle">
+      <h3>이탈 돌보미</h3>
+      <div class="table-wrap circle">
+        <div class="circle-table"></div>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>서울</li>
+          <li><span class="color"></span>부산</li>
+          <li><span class="color"></span>대구</li>
+          <li><span class="color"></span>인천</li>
+          <li><span class="color"></span>광주</li>
+          <li><span class="color"></span>대전</li>
+          <li><span class="color"></span>울산</li>
+          <li><span class="color"></span>세종</li>
+          <li><span class="color"></span>경기</li>
+        </ul>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>강원</li>
+          <li><span class="color"></span>충남</li>
+          <li><span class="color"></span>충북</li>
+          <li><span class="color"></span>경남</li>
+          <li><span class="color"></span>경북</li>
+          <li><span class="color"></span>전남</li>
+          <li><span class="color"></span>전북</li>
+          <li><span class="color"></span>제주</li>
+        </ul>  
+      </div>
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>돌보미 활동</h3>
+    <div class="table-wrap color-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>기관</th>
+                    <th>서비스 연계<br />(신규)</th>
+                    <th>서비스 연계<br />(월간)</th>
+                    <th>활동시간</th>
+                    <th>시간당 단가<br />(원)</th>
+                    <th>교통비<br />(원)</th>
+                    <th>법정수당<br />(원)</th>
+                    <th>총 활동비<br />(원)</th>
+                    <th>1인당<br />월평균 수당<br />(원)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>서울</td>
+                    <td>9</td>
+                    <td>208</td>
+                    <td>15,643</td>
+                    <td>143,289,880</td>
+                    <td>0</td>
+                    <td>23,685,012</td>
+                    <td>166,974,892</td>
+                    <td>802,764</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>9</td>
+                    <td>208</td>
+                    <td>15,643</td>
+                    <td>143,289,880</td>
+                    <td>0</td>
+                    <td>23,685,012</td>
+                    <td>166,974,892</td>
+                    <td>802,764</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>9</td>
+                    <td>208</td>
+                    <td>15,643</td>
+                    <td>143,289,880</td>
+                    <td>0</td>
+                    <td>23,685,012</td>
+                    <td>166,974,892</td>
+                    <td>802,764</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>9</td>
+                    <td>208</td>
+                    <td>15,643</td>
+                    <td>143,289,880</td>
+                    <td>0</td>
+                    <td>23,685,012</td>
+                    <td>166,974,892</td>
+                    <td>802,764</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>9</td>
+                    <td>208</td>
+                    <td>15,643</td>
+                    <td>143,289,880</td>
+                    <td>0</td>
+                    <td>23,685,012</td>
+                    <td>166,974,892</td>
+                    <td>802,764</td>
+                </tr>
+                <tr>
+                    <td>계</td>
+                    <td>83</td>
+                    <td>2,117</td>
+                    <td>194,587</td>
+                    <td>1,782,416,920</td>
+                    <td>21,431,000</td>
+                    <td>382,123,801</td>
+                    <td>2,185,971,721</td>
+                    <td>1,032,580</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box circle">
+      <h3>신규 서비스 연계</h3>
+      <div class="table-wrap circle">
+        <div class="circle-table"></div>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>서울</li>
+          <li><span class="color"></span>부산</li>
+          <li><span class="color"></span>대구</li>
+          <li><span class="color"></span>인천</li>
+          <li><span class="color"></span>광주</li>
+          <li><span class="color"></span>대전</li>
+          <li><span class="color"></span>울산</li>
+          <li><span class="color"></span>세종</li>
+          <li><span class="color"></span>경기</li>
+        </ul>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>강원</li>
+          <li><span class="color"></span>충남</li>
+          <li><span class="color"></span>충북</li>
+          <li><span class="color"></span>경남</li>
+          <li><span class="color"></span>경북</li>
+          <li><span class="color"></span>전남</li>
+          <li><span class="color"></span>전북</li>
+          <li><span class="color"></span>제주</li>
+        </ul>
+        
+      </div>
+    </div>
+    <div class="con-box circle">
+      <h3>월간 서비스 연계</h3>
+      <div class="table-wrap circle">
+        <div class="circle-table"></div>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>서울</li>
+          <li><span class="color"></span>부산</li>
+          <li><span class="color"></span>대구</li>
+          <li><span class="color"></span>인천</li>
+          <li><span class="color"></span>광주</li>
+          <li><span class="color"></span>대전</li>
+          <li><span class="color"></span>울산</li>
+          <li><span class="color"></span>세종</li>
+          <li><span class="color"></span>경기</li>
+        </ul>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>강원</li>
+          <li><span class="color"></span>충남</li>
+          <li><span class="color"></span>충북</li>
+          <li><span class="color"></span>경남</li>
+          <li><span class="color"></span>경북</li>
+          <li><span class="color"></span>전남</li>
+          <li><span class="color"></span>전북</li>
+          <li><span class="color"></span>제주</li>
+        </ul>  
+      </div>
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>활동 돌보미(신규) 인적사항</h3>
+    <div class="table-wrap color-table multi-table">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="3">기관</th>
+                    <th colspan="10">활동 돌보미수(신규)</th>
+                </tr>
+                <tr>
+                    <th colspan="2">성별</th>
+                    <th rowspan="2">합계</th>
+                    <th colspan="6">연령</th>
+                    <th rowspan="2">합계</th>
+                </tr>
+                <tr>
+                    <th>남</th>
+                    <th>여</th>
+                    <th>만30세 미만</th>
+                    <th>만30세 이상<br />~만40세 미만</th>
+                    <th>만40세 이상<br />~만50세 미만</th>
+                    <th>만50세 이상<br />~만60세 미만</th>
+                    <th>만60세 이상<br />~만65세 미만</th>
+                    <th>만65세 이상<br />~만70세 이하</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>계</td>
+                    <td>2</td>
+                    <td>81</td>
+                    <td>83</td>
+                    <td>0</td>
+                    <td>10</td>
+                    <td>18</td>
+                    <td>35</td>
+                    <td>17</td>
+                    <td>3</td>
+                    <td>83</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box circle">
+      <h3>신규 활동 돌보미 성별</h3>
+      <div class="table-wrap circle">
+        <div class="circle-table"></div>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>남</li>
+          <li><span class="color"></span>여</li>
+        </ul>
+      </div>
+    </div>
+    <div class="con-box circle">
+      <h3>신규 활동 돌보미 연령대</h3>
+      <div class="table-wrap circle">
+        <div class="circle-table"></div>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>30세미만</li>
+          <li><span class="color"></span>40세미만</li>
+          <li><span class="color"></span>50세미만</li>
+          <li><span class="color"></span>60세미만</li>
+          <li><span class="color"></span>65세미만</li>
+          <li><span class="color"></span>70세이하</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>돌보미 활동비</h3>
+    <div class="table-wrap color-table multi-table">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">기관</th>
+                    <th colspan="6">활동 돌보미수(월간)</th>
+                    <th rowspan="2">합계</th>
+                </tr>
+                <tr>
+                    <th>50만원 이하</th>
+                    <th>50만원 초과~<br/>100만원 이하</th>
+                    <th>100만원 초과~<br/>150만원 이하</th>
+                    <th>150만원 초과~<br/>200만원 이하</th>
+                    <th>200만원 초과~<br/>250만원 이하</th>
+                    <th>250만원 초과</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>서울</td>
+                    <td>27</td>
+                    <td>81</td>
+                    <td>66</td>
+                    <td>21</td>
+                    <td>13</td>
+                    <td>0</td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>27</td>
+                    <td>81</td>
+                    <td>66</td>
+                    <td>21</td>
+                    <td>13</td>
+                    <td>0</td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>27</td>
+                    <td>81</td>
+                    <td>66</td>
+                    <td>21</td>
+                    <td>13</td>
+                    <td>0</td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>27</td>
+                    <td>81</td>
+                    <td>66</td>
+                    <td>21</td>
+                    <td>13</td>
+                    <td>0</td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>계</td>
+                    <td>262</td>
+                    <td>966</td>
+                    <td>461</td>
+                    <td>290</td>
+                    <td>115</td>
+                    <td>23</td>
+                    <td>2,117</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box circle">
+      <h3>돌보미 활동비</h3>
+      <div class="table-wrap circle">
+        <div class="circle-table"></div>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>50만원이하</li>
+          <li><span class="color"></span>100만원이하</li>
+          <li><span class="color"></span>150만원이하</li>
+          <li><span class="color"></span>200만원이하</li>
+          <li><span class="color"></span>250만원이하</li>
+          <li><span class="color"></span>250만원초과</li>
+        </ul>        
+      </div>
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>돌봄서비스 제공 아동수</h3>
+    <div class="table-wrap color-table multi-table">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">기관</th>
+                    <th colspan="5">활동 돌보미수(월간)</th>
+                    <th rowspan="2">합계</th>
+                </tr>
+                <tr>
+                    <th>아동 1인</th>
+                    <th>아동 2인</th>
+                    <th>아동 3인</th>
+                    <th>아동 4인</th>
+                    <th>아동 5인 이상</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>서울</td>
+                    <td>166</td>
+                    <td>37</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>166</td>
+                    <td>37</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>166</td>
+                    <td>37</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>166</td>
+                    <td>37</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>계</td>
+                    <td>1,428</td>
+                    <td>498</td>
+                    <td>155</td>
+                    <td>30</td>
+                    <td>6</td>
+                    <td>2,117</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box circle">
+      <h3>돌봄서비스 제공 아동수</h3>
+      <div class="table-wrap circle">
+        <div class="circle-table"></div>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>1인</li>
+          <li><span class="color"></span>2인</li>
+          <li><span class="color"></span>3인</li>
+          <li><span class="color"></span>4인</li>
+          <li><span class="color"></span>5인이상</li>
+        </ul>        
+      </div>
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>양성교육</h3>
+    <div class="table-wrap color-table multi-table">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">기관</th>
+                    <th colspan="2">진행방법 및 횟수</th>
+                    <th colspan="3">양성교육 수료인원(연인원)</th>
+                </tr>
+                <tr>
+                    <th>온라인</th>
+                    <th>오프라인</th>
+                    <th>40시간</th>
+                    <th>20시간</th>
+                    <th>합계</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>계</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>29</td>
+                    <td>12</td>
+                    <td>50</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>
+
+  <div class="tables-wrap">
+    <div class="con-box circle">
+      <h3>양성교육 진행방법 및 횟수</h3>
+      <div class="table-wrap circle">
+        <div class="circle-table"></div>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>서울</li>
+          <li><span class="color"></span>부산</li>
+          <li><span class="color"></span>대구</li>
+          <li><span class="color"></span>인천</li>
+          <li><span class="color"></span>광주</li>
+          <li><span class="color"></span>대전</li>
+          <li><span class="color"></span>울산</li>
+          <li><span class="color"></span>세종</li>
+          <li><span class="color"></span>경기</li>
+        </ul>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>강원</li>
+          <li><span class="color"></span>충남</li>
+          <li><span class="color"></span>충북</li>
+          <li><span class="color"></span>경남</li>
+          <li><span class="color"></span>경북</li>
+          <li><span class="color"></span>전남</li>
+          <li><span class="color"></span>전북</li>
+          <li><span class="color"></span>제주</li>
+        </ul>
+        
+      </div>
+    </div>
+    <div class="con-box circle">
+      <h3>양성교육 수료인원</h3>
+      <div class="table-wrap circle">
+        <div class="circle-table"></div>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>서울</li>
+          <li><span class="color"></span>부산</li>
+          <li><span class="color"></span>대구</li>
+          <li><span class="color"></span>인천</li>
+          <li><span class="color"></span>광주</li>
+          <li><span class="color"></span>대전</li>
+          <li><span class="color"></span>울산</li>
+          <li><span class="color"></span>세종</li>
+          <li><span class="color"></span>경기</li>
+        </ul>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>강원</li>
+          <li><span class="color"></span>충남</li>
+          <li><span class="color"></span>충북</li>
+          <li><span class="color"></span>경남</li>
+          <li><span class="color"></span>경북</li>
+          <li><span class="color"></span>전남</li>
+          <li><span class="color"></span>전북</li>
+          <li><span class="color"></span>제주</li>
+        </ul>  
+      </div>
+    </div>
+  </div>
+
+  <div class="con-box">
+    <h3>보수교육</h3>
+    <div class="table-wrap color-table multi-table">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">기관</th>
+                    <th colspan="2">진행방법 및 횟수</th>
+                    <th colspan="3">보수교육 운영 현황(연인원)</th>
+                </tr>
+                <tr>
+                    <th>온라인</th>
+                    <th>오프라인</th>
+                    <th>교육시간</th>
+                    <th>참여인원</th>
+                    <th>비고</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>서울</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>계</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td>42</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>
+  
+  <div class="tables-wrap">
+    <div class="con-box circle">
+      <h3>보수교육 진행방법 및 횟수</h3>
+      <div class="table-wrap circle">
+        <div class="circle-table"></div>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>서울</li>
+          <li><span class="color"></span>부산</li>
+          <li><span class="color"></span>대구</li>
+          <li><span class="color"></span>인천</li>
+          <li><span class="color"></span>광주</li>
+          <li><span class="color"></span>대전</li>
+          <li><span class="color"></span>울산</li>
+          <li><span class="color"></span>세종</li>
+          <li><span class="color"></span>경기</li>
+        </ul>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>강원</li>
+          <li><span class="color"></span>충남</li>
+          <li><span class="color"></span>충북</li>
+          <li><span class="color"></span>경남</li>
+          <li><span class="color"></span>경북</li>
+          <li><span class="color"></span>전남</li>
+          <li><span class="color"></span>전북</li>
+          <li><span class="color"></span>제주</li>
+        </ul>
+        
+      </div>
+    </div>
+    <div class="con-box circle">
+      <h3>보수교육 참여인원</h3>
+      <div class="table-wrap circle">
+        <div class="circle-table"></div>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>서울</li>
+          <li><span class="color"></span>부산</li>
+          <li><span class="color"></span>대구</li>
+          <li><span class="color"></span>인천</li>
+          <li><span class="color"></span>광주</li>
+          <li><span class="color"></span>대전</li>
+          <li><span class="color"></span>울산</li>
+          <li><span class="color"></span>세종</li>
+          <li><span class="color"></span>경기</li>
+        </ul>
+        <ul class="circle-table-list">
+          <li><span class="color"></span>강원</li>
+          <li><span class="color"></span>충남</li>
+          <li><span class="color"></span>충북</li>
+          <li><span class="color"></span>경남</li>
+          <li><span class="color"></span>경북</li>
+          <li><span class="color"></span>전남</li>
+          <li><span class="color"></span>전북</li>
+          <li><span class="color"></span>제주</li>
+        </ul>  
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
