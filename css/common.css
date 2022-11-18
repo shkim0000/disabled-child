@@ -446,6 +446,17 @@ h3.info-title { margin:20px 27px;}
 .con-box5 button {  position: absolute; right: 60px; bottom: 50px;}
 .table-heading .address-btn-box { position: initial;}
 
+/* SA-08-08 돌봄서비스 현황 > 원형 그래프 */
+.table-wrap.circle {background-color: #dbdbdb; display: flex; justify-content: space-between; min-height: 250px;}
+.table-wrap.circle  > .circle-table {width: 70%;  display: flex; background-color: pink;}
+.table-wrap.circle > .circle-table-list {width: auto; background-color: green; display: flex; flex-direction: column; }
+.table-wrap.circle > .circle-table-list > li {background-color: pink; padding-left: 32px; position: relative;}
+.table-wrap.circle > .circle-table-list > li + li {margin-top: 10px;}
+.table-wrap.circle > .circle-table-list > li > span {display: block; width: 20px; height: 100%; position: absolute; left: 0; top: 0; background-color: brown; }
+
+/* table thead높이 조정 */
+.correction {height: 66px;}
+.correction2 {height: 115px;}
 
 /* SA-08-16 시스템 파라미터 관리 */
 .mark-box { width: 48px; height: 48px; margin: 0 auto; background: #d9d9d9;}
