@@ -39,16 +39,18 @@
   <div class="con-box">
     <div class="input-box info-input-box">
       <div class="input">
-        <label for="">기간</label>
-        <input type="text" id="" class="info-input datepicker">
+        <label for="">시행기관</label>
+        <select name="" id="" class="info-input">
+          <option value="">전체</option>
+          <option value=""></option>
+        </select>
       </div>
 
       <div class="input">
-        <label for="">실적 유형</label>
-        <select name="" id="" class="info-input">
-          <option value="">돌보미 활동</option>
-          <option value=""></option>
-        </select>
+        <label for="">서비스 기간</label>
+        <input type="text" id="" class="info-input datepicker">
+        <span class="age-input"> ~ </span>
+        <input type="text" id="" class="info-input datepicker">
       </div>
       <button class="btn">조회</button>
     </div>
@@ -342,7 +344,7 @@
         </p>
         <div class="btn-wrap j-center">
           <button type="button" class="btn small ok-btn">네</button>
-          <button type="button" class="btn small no-btn">아니오</button>
+          <button type="button" class="btn small close-btn">아니오</button>
         </div>
       </div>
     </div>

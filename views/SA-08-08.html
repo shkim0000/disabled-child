@@ -10,9 +10,10 @@
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../lib/jquery-ui-1.13.2.custom/jquery-ui.min.css">
 
-  <!-- js & lib -->
+  <!-- js & lib & chart -->
   <script src="../lib/jquery-3.6.1/jquery-3.6.1.js"></script>
   <script src="../lib/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="../js/common.js"></script>
 
 </head>
@@ -374,61 +375,16 @@
 
 
   <div class="tables-wrap">
-    <div class="con-box circle">
+    <div class="con-box chart">
       <h3>돌봄서비스 선정 아동수</h3>
-      <div class="table-wrap circle">
-        <div class="circle-table"></div>
-        <ul class="circle-table-list">
-          <li><span class="color"></span>서울</li>
-          <li><span class="color"></span>부산</li>
-          <li><span class="color"></span>대구</li>
-          <li><span class="color"></span>인천</li>
-          <li><span class="color"></span>광주</li>
-          <li><span class="color"></span>대전</li>
-          <li><span class="color"></span>울산</li>
-          <li><span class="color"></span>세종</li>
-          <li><span class="color"></span>경기</li>
-        </ul>
-        <ul class="circle-table-list">
-          <li><span class="color"></span>강원</li>
-          <li><span class="color"></span>충남</li>
-          <li><span class="color"></span>충북</li>
-          <li><span class="color"></span>경남</li>
-          <li><span class="color"></span>경북</li>
-          <li><span class="color"></span>전남</li>
-          <li><span class="color"></span>전북</li>
-          <li><span class="color"></span>제주</li>
-        </ul>
-        
+      <div class="chart-table">
+        <canvas id="chart-pie1"></canvas>
       </div>
     </div>
-    <div class="con-box circle">
+    <div class="con-box chart">
       <h3>돌봄서비스 대기 아동수</h3>
-      <div class="table-wrap circle">
-        <div class="circle-table"></div>
-        <ul class="circle-table-list">
-          <li><span class="color"></span>서울</li>
-          <li><span class="color"></span>부산</li>
-          <li><span class="color"></span>대구</li>
-          <li><span class="color"></span>인천</li>
-          <li><span class="color"></span>광주</li>
-          <li><span class="color"></span>대전</li>
-          <li><span class="color"></span>울산</li>
-          <li><span class="color"></span>세종</li>
-          <li><span class="color"></span>경기</li>
-        </ul>
-        <ul class="circle-table-list">
-          <li><span class="color"></span>강원</li>
-          <li><span class="color"></span>충남</li>
-          <li><span class="color"></span>충북</li>
-          <li><span class="color"></span>경남</li>
-          <li><span class="color"></span>경북</li>
-          <li><span class="color"></span>전남</li>
-          <li><span class="color"></span>전북</li>
-          <li><span class="color"></span>제주</li>
-        </ul>
-        
-        
+      <div class="chart-table">
+        <canvas id="chart-pie2"></canvas>
       </div>
     </div>
   </div>
@@ -507,60 +463,17 @@
   </div>
 
   <div class="tables-wrap">
-    <div class="con-box circle">
+    <div class="con-box chart">
       <h3>돌봄서비스 실이용 아동수</h3>
-      <div class="table-wrap circle">
-        <div class="circle-table"></div>
-        <ul class="circle-table-list">
-          <li><span class="color"></span>서울</li>
-          <li><span class="color"></span>부산</li>
-          <li><span class="color"></span>대구</li>
-          <li><span class="color"></span>인천</li>
-          <li><span class="color"></span>광주</li>
-          <li><span class="color"></span>대전</li>
-          <li><span class="color"></span>울산</li>
-          <li><span class="color"></span>세종</li>
-          <li><span class="color"></span>경기</li>
-        </ul>
-        <ul class="circle-table-list">
-          <li><span class="color"></span>강원</li>
-          <li><span class="color"></span>충남</li>
-          <li><span class="color"></span>충북</li>
-          <li><span class="color"></span>경남</li>
-          <li><span class="color"></span>경북</li>
-          <li><span class="color"></span>전남</li>
-          <li><span class="color"></span>전북</li>
-          <li><span class="color"></span>제주</li>
-        </ul>
-        
-      </div>
+      <div class="chart-table">
+        <canvas id="chart-pie3"></canvas>
+      </div>  
     </div>
-    <div class="con-box circle">
+    <div class="con-box chart">
       <h3>돌봄서비스 배정량 대비 아동수</h3>
-      <div class="table-wrap circle">
-        <div class="circle-table"></div>
-        <ul class="circle-table-list">
-          <li><span class="color"></span>서울</li>
-          <li><span class="color"></span>부산</li>
-          <li><span class="color"></span>대구</li>
-          <li><span class="color"></span>인천</li>
-          <li><span class="color"></span>광주</li>
-          <li><span class="color"></span>대전</li>
-          <li><span class="color"></span>울산</li>
-          <li><span class="color"></span>세종</li>
-          <li><span class="color"></span>경기</li>
-        </ul>
-        <ul class="circle-table-list">
-          <li><span class="color"></span>강원</li>
-          <li><span class="color"></span>충남</li>
-          <li><span class="color"></span>충북</li>
-          <li><span class="color"></span>경남</li>
-          <li><span class="color"></span>경북</li>
-          <li><span class="color"></span>전남</li>
-          <li><span class="color"></span>전북</li>
-          <li><span class="color"></span>제주</li>
-        </ul>     
-      </div>
+      <div class="chart-table">
+        <canvas id="chart-pie4"></canvas>
+      </div>  
     </div>
   </div>
 
@@ -1371,60 +1284,17 @@
   </div>
 
   <div class="tables-wrap">
-    <div class="con-box circle">
+    <div class="con-box chart">
       <h3>서비스 연계 건수</h3>
-      <div class="table-wrap circle">
-        <div class="circle-table"></div>
-        <ul class="circle-table-list">
-          <li><span class="color"></span>서울</li>
-          <li><span class="color"></span>부산</li>
-          <li><span class="color"></span>대구</li>
-          <li><span class="color"></span>인천</li>
-          <li><span class="color"></span>광주</li>
-          <li><span class="color"></span>대전</li>
-          <li><span class="color"></span>울산</li>
-          <li><span class="color"></span>세종</li>
-          <li><span class="color"></span>경기</li>
-        </ul>
-        <ul class="circle-table-list">
-          <li><span class="color"></span>강원</li>
-          <li><span class="color"></span>충남</li>
-          <li><span class="color"></span>충북</li>
-          <li><span class="color"></span>경남</li>
-          <li><span class="color"></span>경북</li>
-          <li><span class="color"></span>전남</li>
-          <li><span class="color"></span>전북</li>
-          <li><span class="color"></span>제주</li>
-        </ul>
-        
-      </div>
+      <div class="chart-table">
+        <canvas id="chart-pie5"></canvas>
+      </div> 
     </div>
-    <div class="con-box circle">
+    <div class="con-box chart">
       <h3>연계 아동수</h3>
-      <div class="table-wrap circle">
-        <div class="circle-table"></div>
-        <ul class="circle-table-list">
-          <li><span class="color"></span>서울</li>
-          <li><span class="color"></span>부산</li>
-          <li><span class="color"></span>대구</li>
-          <li><span class="color"></span>인천</li>
-          <li><span class="color"></span>광주</li>
-          <li><span class="color"></span>대전</li>
-          <li><span class="color"></span>울산</li>
-          <li><span class="color"></span>세종</li>
-          <li><span class="color"></span>경기</li>
-        </ul>
-        <ul class="circle-table-list">
-          <li><span class="color"></span>강원</li>
-          <li><span class="color"></span>충남</li>
-          <li><span class="color"></span>충북</li>
-          <li><span class="color"></span>경남</li>
-          <li><span class="color"></span>경북</li>
-          <li><span class="color"></span>전남</li>
-          <li><span class="color"></span>전북</li>
-          <li><span class="color"></span>제주</li>
-        </ul>  
-      </div>
+      <div class="chart-table">
+        <canvas id="chart-pie6"></canvas>
+      </div>  
     </div>
   </div>
 
@@ -1910,69 +1780,125 @@
   </div>
 
   <div class="tables-wrap">
-    <div class="con-box circle">
+    <div class="con-box chart">
       <h3>돌봄서비스 월시간(120) 초과 이용 아동수</h3>
-      <div class="table-wrap circle">
-        <div class="circle-table"></div>
-        <ul class="circle-table-list">
-          <li><span class="color"></span>서울</li>
-          <li><span class="color"></span>부산</li>
-          <li><span class="color"></span>대구</li>
-          <li><span class="color"></span>인천</li>
-          <li><span class="color"></span>광주</li>
-          <li><span class="color"></span>대전</li>
-          <li><span class="color"></span>울산</li>
-          <li><span class="color"></span>세종</li>
-          <li><span class="color"></span>경기</li>
-        </ul>
-        <ul class="circle-table-list">
-          <li><span class="color"></span>강원</li>
-          <li><span class="color"></span>충남</li>
-          <li><span class="color"></span>충북</li>
-          <li><span class="color"></span>경남</li>
-          <li><span class="color"></span>경북</li>
-          <li><span class="color"></span>전남</li>
-          <li><span class="color"></span>전북</li>
-          <li><span class="color"></span>제주</li>
-        </ul>
-        
-      </div>
+      <div class="chart-table">
+        <canvas id="chart-pie7"></canvas>
+      </div>  
     </div>
-    <div class="con-box circle">
+    <div class="con-box chart">
       <h3>돌봄서비스 연시간(840) 이용 아동수</h3>
-      <div class="table-wrap circle">
-        <div class="circle-table"></div>
-        <ul class="circle-table-list">
-          <li><span class="color"></span>서울</li>
-          <li><span class="color"></span>부산</li>
-          <li><span class="color"></span>대구</li>
-          <li><span class="color"></span>인천</li>
-          <li><span class="color"></span>광주</li>
-          <li><span class="color"></span>대전</li>
-          <li><span class="color"></span>울산</li>
-          <li><span class="color"></span>세종</li>
-          <li><span class="color"></span>경기</li>
-        </ul>
-        <ul class="circle-table-list">
-          <li><span class="color"></span>강원</li>
-          <li><span class="color"></span>충남</li>
-          <li><span class="color"></span>충북</li>
-          <li><span class="color"></span>경남</li>
-          <li><span class="color"></span>경북</li>
-          <li><span class="color"></span>전남</li>
-          <li><span class="color"></span>전북</li>
-          <li><span class="color"></span>제주</li>
-        </ul>  
-      </div>
+      <div class="chart-table">
+        <canvas id="chart-pie8"></canvas>
+      </div>   
     </div>
   </div>
-
-
-
-
-
-
-
 </div>
+<script>
+  const sa0808_1 = document.getElementById('chart-pie1');
+  const sa0808_2 = document.getElementById('chart-pie2');
+  const sa0808_3 = document.getElementById('chart-pie3');
+  const sa0808_4 = document.getElementById('chart-pie4');
+  const sa0808_5 = document.getElementById('chart-pie5');
+  const sa0808_6 = document.getElementById('chart-pie6');
+  const sa0808_7 = document.getElementById('chart-pie7');
+  const sa0808_8 = document.getElementById('chart-pie8');
+
+  new Chart(sa0808_1, {
+    type: 'pie',
+    data: {
+      labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+  });
+
+  new Chart(sa0808_2, {
+    type: 'pie',
+    data: {
+      labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+  });
+
+  new Chart(sa0808_3, {
+    type: 'pie',
+    data: {
+      labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+  });
+
+  new Chart(sa0808_4, {
+    type: 'pie',
+    data: {
+      labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+  });
+
+  new Chart(sa0808_5, {
+    type: 'pie',
+    data: {
+      labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+  });
+
+  new Chart(sa0808_6, {
+    type: 'pie',
+    data: {
+      labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+  });
+
+  new Chart(sa0808_7, {
+    type: 'pie',
+    data: {
+      labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+  });
+
+  new Chart(sa0808_8, {
+    type: 'pie',
+    data: {
+      labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+  });
+</script>
 </body>
 </html>

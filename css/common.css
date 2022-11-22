@@ -210,7 +210,7 @@ border-radius: 4px; padding: 10px; max-width: 295px;}
 position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;clip:rect(0,0,0,0); border: 0; }
 
 /* 팝업 */
-.popup{visibility:hidden;opacity:0;width:100%;height:100%;background:rgba(0,0,0,0.6);color:var(--popColor);position:fixed;top:0;left:0;z-index:9999;transition:opacity 200ms;}
+.popup{visibility:hidden;opacity:0;width:100%;height:100%;background:rgba(0,0,0,0.6);color:var(--popColor);position:fixed;top:0;left:0;z-index:99999;transition:opacity 200ms;}
 .popup.on{visibility:visible;opacity:1;}
 .popup.no-dimm{max-height:80vh;width:400px;height:auto;background:none;}
 .popup h3{font-size:16px;}
@@ -451,16 +451,18 @@ h3.info-title { margin:20px 27px;}
 /* 돌봄 서비스 소개 관리 */
 .con-box5 { height: 750px; margin-top: 78px; position: relative;}
 .con-box5 .image-box { min-height:500px; min-width: 500px; border: 1px dashed #757575; border-radius: 16px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.con-box5 .image-box2 {position: static; min-height:40%; background-color: red; }
+.con-box5 .image-box2 + div {margin-top: 20px;}
 .con-box5 button {  position: absolute; right: 60px; bottom: 50px;}
 .table-heading .address-btn-box { position: initial;}
 
-/* SA-08-08 돌봄서비스 현황 > 원형 그래프 */
-.table-wrap.circle {background-color: #dbdbdb; display: flex; justify-content: space-between; min-height: 250px;}
-.table-wrap.circle  > .circle-table {width: 70%;  display: flex; background-color: pink;}
-.table-wrap.circle > .circle-table-list {width: auto; background-color: green; display: flex; flex-direction: column; }
-.table-wrap.circle > .circle-table-list > li {background-color: pink; padding-left: 32px; position: relative;}
-.table-wrap.circle > .circle-table-list > li + li {margin-top: 10px;}
-.table-wrap.circle > .circle-table-list > li > span {display: block; width: 20px; height: 100%; position: absolute; left: 0; top: 0; background-color: brown; }
+/* chart 그래프 */
+.table-wrap.chart{min-height: 300px; display: flex; align-items: center;}
+.table-wrap.chart > .chart-table {width: 100%;  display: flex; justify-content: center; }
+/* .table-wrap.chart .chart-table-list {width: auto; background-color: green; display: flex; flex-direction: column; }
+.table-wrap.chart .chart-table-list > li {background-color: pink; padding-left: 32px; position: relative;}
+.table-wrap.chart .chart-table-list > li + li {margin-top: 10px;}
+.table-wrap.chart .chart-table-list > li > span {display: block; width: 20px; height: 100%; position: absolute; left: 0; top: 0; background-color: brown; } */
 
 /* table thead높이 조정 */
 .correction {height: 66px;}

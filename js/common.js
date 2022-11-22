@@ -120,6 +120,10 @@ $(function(){
             $(".popup.pop21").addClass("on");
         }else if($(this).hasClass("pop22")){
             $(".popup.pop22").addClass("on");
+        }else if($(this).hasClass("pop23")){
+            $(".popup.pop23").addClass("on");
+        }else if($(this).hasClass("pop24")){
+            $(".popup.pop24").addClass("on");
         }
     });
 
@@ -130,23 +134,21 @@ $(function(){
             $(this).removeClass("on");
         }
     });
-    $(".popup .pop-close, .popup .ok-btn, .popup , .close-btn , .store_btn ,.no-btn").on("click", function(){
+    
+    $(".popup .pop-close, .popup .ok-btn, .popup , .close-btn , .store_btn ").on("click", function(){
         $("body").css("overflow","auto");
         $(this).parents(".popup").removeClass("on");
-
-        $(".layer-popup-bg").removeClass("on");
     });
 
     // 저장 버튼 SA-08-10
-    $('.store-btn').on('click', function() {
-        $('div.layer-popup-bg').addClass('on');
-        $("div.popup.pop23").addClass("on")
-        $('div.popup').on('scroll touchmove mousewheel', function(event) {
-            event.preventDefault();
-            event.stopPropagation();
-            return false;
-        });
-    })
+    // $('button.store-btn').on('click', function() {
+    //     $("div.popup.popup23, div.popup.popup24 ").addClass("on")
+    //     $('div.popup').on('scroll touchmove mousewheel', function(event) {
+    //         event.preventDefault();
+    //         event.stopPropagation();
+    //         return false;
+    //     });
+    // })
 
 
     // 수료증 출력
