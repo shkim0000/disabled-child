@@ -61,12 +61,18 @@
             <label for="">소속</label>
             <input type="text" id="" class="info-input" value="서울">
           </div>
-          <div class="input">
+          <div class="input bt0">
             <label for="">이용자</label>
-            <select name="" id="" class="info-input">
-              <option value=""></option>
-              <option value=""></option>
-            </select>
+            <div class="input">
+              <div class="select-box" class="info-input">
+                <select name="" id="">
+                  <option value="">전체</option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+                <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -125,12 +131,12 @@
         
         <div class="input-box info-input-box4 info-input-box5">
           <div class="input input-textarea">
-            <label for="">첨부파일</label>
+            <label for="" class="small">첨부파일</label>
             <div class="upload-file-wrap">
               <input type="text" class="drag-drop-box" value="첨부하실 파일을 끌어서 넣어주십시오.">
               <div class="btn-box flex">
                 <div class="upload-filebox btn small">
-                  <label for="upload-file">파일추가</label>
+                  <label for="upload-file" class="small">파일추가</label>
                   <input type="file" id="upload-file"> 
                 </div>
                 <button class="btn small">삭제</button>

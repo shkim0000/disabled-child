@@ -38,12 +38,18 @@
   <h3 class="info-title">돌봄서비스 > 서비스관리 > 서비스 조회</h3>
   <div class="con-box">
     <div class="input-box info-input-box">
-      <div class="input">
+      <div class="input bt0">
         <label for="">시행기관</label>
-        <select name="" id="" class="info-input">
-          <option value="">전체</option>
-          <option value=""></option>
-        </select>
+        <div class="input">
+          <div class="select-box" class="info-input">
+            <select name="" id="">
+              <option value="">전체</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
+        </div>
       </div>
       <div class="input">
         <label for="">장애아동 성명</label>
@@ -54,42 +60,75 @@
         <input type="text" id="" class="info-input">
       </div>
       <div class="input">
-        <label for="">활동 일자</label>
-        <input type="text" id="" class="info-input datepicker">
+        <div class="datepicker-box">
+          <input type="text" id="date1" class="info-input datepicker">
+          <label for="date1">
+            <img src="./../img/datepicker-arrow.png" alt="달력 열기" />
+          </label>
+        </div>
         <span class="age-input"> ~ </span>
-        <input type="text" id="" class="info-input datepicker">
+        <div class="datepicker-box">
+          <input type="text" id="date2" class="info-input datepicker">
+          <label for="date2">
+            <img src="./../img/datepicker-arrow.png" alt="달력 열기" />
+          </label>
+        </div>
       </div>
       <button class="btn small">조회</button>
     </div>
 
     <div class="input-box info-input-box info-input-box2">
-      <div class="input">
+      <div class="input bt0">
         <label for="">활동 장소</label>
-        <select name="" id="" class="info-input">
-          <option value="">전체</option>
-          <option value=""></option>
-        </select>
+        <div class="input">
+          <div class="select-box" class="info-input">
+            <select name="" id="">
+              <option value="">전체</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
+        </div>
       </div>
-      <div class="input">
+      <div class="input bt0">
         <label for="">서비스 내용</label>
-        <select name="" id="" class="info-input">
-          <option value="">전체</option>
-          <option value=""></option>
-        </select>
+        <div class="input">
+          <div class="select-box" class="info-input">
+            <select name="" id="" class="info-input">
+              <option value="">전체</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
+        </div>
       </div>
-      <div class="input">
+      <div class="input bt0">
         <label for="">서비스 상태</label>
-        <select name="" id="" class="info-input">
-          <option value="">전체</option>
-          <option value=""></option>
-        </select>
+        <div class="input">
+          <div class="select-box" class="info-input">
+            <select name="" id="" class="info-input">
+              <option value="">전체</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
+        </div>
       </div>
-      <div class="input">
+      <div class="input bt0">
         <label for="">서비스 평가 점수</label>
-        <select name="" id="" class="info-input">
-          <option value="">전체</option>
-          <option value=""></option>
-        </select>
+        <div class="input">
+          <div class="select-box" class="info-input">
+            <select name="" id="" class="info-input">
+              <option value="">전체</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -103,12 +142,15 @@
         </a>
       </div>
     </div>
-    <div>
-      <select name="" id="" class="info-input">
-        <option value="">10</option>
-        <option value="">20</option>
-        <option value="">30</option>
-      </select>
+    <div class="input list"> 
+      <div class="select-box">
+        <select name="" id="" class="info-text">
+          <option value="">10</option>
+          <option value="">20</option>
+          <option value="">30</option>
+        </select>
+        <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+      </div>   
     </div>
   </div>
   <div class="table-wrap color-table multi-table table5">
@@ -154,11 +196,16 @@
       </div>
     </div>
     <div class="flex f-column a-end">
-      <select name="" id="" class="info-input m-botton-none">
-        <option value="">10</option>
-        <option value="">20</option>
-        <option value="">30</option>
-      </select>
+      <div class="input list"> 
+        <div class="select-box">
+          <select name="" id="" class="info-text">
+            <option value="">10</option>
+            <option value="">20</option>
+            <option value="">30</option>
+          </select>
+          <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+        </div>   
+      </div>
       <p>조회된 총 이용 시간 : 155시간</p>
     </div>
   </div>

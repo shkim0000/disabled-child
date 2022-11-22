@@ -39,21 +39,35 @@
   <div class="con-box">
     <div class="input-box info-input-box">
       <div class="input">
-        <select name="" id="" class="info-input">
-          <option value="">제목</option>
-          <option value=""></option>
-        </select>
+        <div class="select-box">
+          <select name="" id="" class="info-inpu">
+            <option value="">제목</option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+          <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+        </div>
       </div>
       <div class="input">
         <input type="text" id="" class="info-input info-input-title">
       </div>
       <div class="input">
         <label for="">서비스 기간</label>
-        <input type="text" id="" class="info-input datepicker">
+        <div class="datepicker-box">
+          <input type="text" id="date1" class="info-input datepicker">
+          <label for="date1">
+            <img src="./../img/datepicker-arrow.png" alt="달력 열기" />
+          </label>
+        </div>
         <span class="age-input"> ~ </span>
-        <input type="text" id="" class="info-input datepicker">
+        <div class="datepicker-box">
+          <input type="text" id="date2" class="info-input datepicker">
+          <label for="date2">
+            <img src="./../img/datepicker-arrow.png" alt="달력 열기" />
+          </label>
+        </div>
       </div>
-      <button class="btn">검색</button>
+      <button class="btn small">검색</button>
     </div>
   </div>
 
@@ -70,12 +84,15 @@
         </a>
       </div>
     </div>
-    <div>
-      <select name="" id="" class="info-input">
-        <option value="">10</option>
-        <option value="">20</option>
-        <option value="">30</option>
-      </select>
+    <div class="input list"> 
+      <div class="select-box">
+        <select name="" id="" class="info-text">
+          <option value="">10</option>
+          <option value="">20</option>
+          <option value="">30</option>
+        </select>
+        <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+      </div>   
     </div>
   </div>
 

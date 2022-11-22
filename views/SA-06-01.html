@@ -38,18 +38,34 @@
   <h3 class="info-title">돌보미 급여 조회 > 급여 조회</h3>
   <div class="con-box">
     <div class="input-box info-input-box">
-      <div class="input">
+      <div class="input bt0">
         <label for="">시행기관</label>
-        <select name="" id="" class="info-input">
-          <option value="">전체</option>
-          <option value=""></option>
-        </select>
+        <div class="input">
+          <div class="select-box" class="info-input">
+            <select name="" id="">
+              <option value="">전체</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
+        </div>
       </div>
       <div class="input">
         <label for="">서비스 기간</label>
-        <input type="text" id="" class="info-input datepicker">
+        <div class="datepicker-box">
+          <input type="text" id="date1" class="info-input datepicker">
+          <label for="date1">
+            <img src="./../img/datepicker-arrow.png" alt="달력 열기" />
+          </label>
+        </div>
         <span class="age-input"> ~ </span>
-        <input type="text" id="" class="info-input datepicker">
+        <div class="datepicker-box">
+          <input type="text" id="date2" class="info-input datepicker">
+          <label for="date2">
+            <img src="./../img/datepicker-arrow.png" alt="달력 열기" />
+          </label>
+        </div>
       </div>
       <div class="input">
         <label for="">돌보미 성명</label>
@@ -72,12 +88,15 @@
         </a>
       </div>
     </div>
-    <div>
-      <select name="" id="" class="info-input">
-        <option value="">10</option>
-        <option value="">20</option>
-        <option value="">30</option>
-      </select>
+    <div class="input list"> 
+      <div class="select-box">
+        <select name="" id="" class="info-text">
+          <option value="">10</option>
+          <option value="">20</option>
+          <option value="">30</option>
+        </select>
+        <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+      </div>   
     </div>
   </div>
   <div class="table-wrap color-table table5">

@@ -42,15 +42,26 @@
     <div class="input-box info-input-box">
       <div class="input">
         <label for="">기간</label>
-        <input type="text" id="" class="info-input datepicker">
+        <div class="datepicker-box">
+          <input type="text" id="date1" class="info-input datepicker">
+          <label for="date1">
+            <img src="./../img/datepicker-arrow.png" alt="달력 열기" />
+          </label>
+        </div>
       </div>
 
-      <div class="input">
+      <div class="input bt0">
         <label for="">실적 유형</label>
-        <select name="" id="" class="info-input">
-            <option value="">선정 아동수</option>
-            <option value=""></option>
-          </select>
+        <div class="input">
+          <div class="select-box" class="info-input">
+            <select name="" id="">
+              <option value="">선정 아동수</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
+        </div>
       </div>
       <button class="btn small">조회</button>
     </div>

@@ -162,10 +162,10 @@ $(function(){
     // DatePicker
     $( ".datepicker" ).datepicker({
         dateFormat: 'yy.mm.dd',
-        showOn: "button",
-        buttonImage: "../img/down-arrow.svg",
-        buttonImageOnly: true,
-        buttonText: "Select date"
+        // showOn: "button",
+        // buttonImage: "../img/down-arrow.svg",
+        // buttonImageOnly: true,
+        // buttonText: "Select date"
     });
 
     // 사이드메뉴

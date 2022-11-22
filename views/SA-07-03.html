@@ -52,34 +52,53 @@
         </div>
         <div class="input">
           <label for="">서비스 기간</label>
-          <input type="text" id="" class="info-input datepicker">
+          <div class="datepicker-box">
+            <input type="text" id="date1" class="info-input datepicker">
+            <label for="date1">
+              <img src="./../img/datepicker-arrow.png" alt="달력 열기" />
+            </label>
+          </div>
           <span class="age-input"> ~ </span>
-          <input type="text" id="" class="info-input datepicker">
+          <div class="datepicker-box">
+            <input type="text" id="date2" class="info-input datepicker">
+            <label for="date2">
+              <img src="./../img/datepicker-arrow.png" alt="달력 열기" />
+            </label>
+          </div>
         </div>
         <div class="input">
           <label for="">공지유형</label>
-          <select name="" id="" class="info-input">
-            <option value="">공통</option>
-            <option value=""></option>
-          </select>
+          <div class="select-box">
+            <select name="" id="" >
+              <option value="">공통</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
         </div>
       </div>
   
       <div class="input-box info-input-box">
         <div class="input">
-          <select name="" id="" class="info-input">
-            <option value="">굴림</option>
-            <option value=""></option>
-          </select>
+          <div class="select-box">
+            <select name="" id="">
+              <option value="">굴림</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
         </div>
         <div class="input">
-          <select name="" id="" class="info-input">
-            <option value="">10</option>
-            <option value="">11</option>
-            <option value="">12</option>
-            <option value="">15</option>
-            <option value=""></option>
-          </select>
+          <div class="select-box">
+            <select name="" id="">
+              <option value="">10</option>
+              <option value="">11</option>
+              <option value="">12</option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
         </div>
         <div class="input input-btns">
           <button class="btn line"><img src="../img/text-bold-icon.svg" alt=""></button>
@@ -87,16 +106,24 @@
           <button class="btn line"><img src="../img/text-underline-icon.svg" alt=""></button>
         </div>
         <div class="input">
-          <select name="" id="" class="info-input info-text">
-            <option value="">글자색</option>
-            <option value=""></option>
-          </select>          
+          <div class="select-box">
+            <select name="" id="" class="info-text">
+              <option value="">글자색</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>         
         </div>
         <div class="input">
-          <select name="" id="" class="info-input info-text">
-            <option value="">글자 배경색</option>
-            <option value=""></option>
-          </select>
+          <div class="select-box">
+            <select name="" id="" class="info-text">
+              <option value="">글자 배경색</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
         </div>
         <div class="input input-btns">
           <button class="btn line"><img src="../img/text-left-icon.svg" alt=""></button>
@@ -122,7 +149,7 @@
             <input type="text" value="· 파일명 hwp (11.5MB)" disabled>
             <div class="btn-box flex">
               <div class="upload-filebox btn small">
-                <label for="upload-file">파일추가</label>
+                <label for="upload-file" class="small">파일추가</label>
                 <input type="file" id="upload-file"> 
               </div>
               <button class="btn small">삭제</button>

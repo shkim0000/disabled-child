@@ -38,23 +38,34 @@
   <h3 class="info-title">관리자 페이지 > 서비스 현황 > 돌보미 정보</h3>
   <div class="con-box">
     <div class="input-box info-input-box">
-      <div class="input">
-        <label for="">시행기관</label>
-        <select name="" id="" class="info-input">
-          <option value="">전체</option>
-          <option value=""></option>
-        </select>
+      <div class="input bt0">
+        <label for="">시행 기관</label>
+        <div class="input">
+          <div class="select-box" class="info-input">
+            <select name="" id="">
+              <option value="">전체</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
+        </div>
       </div>
       <div class="input">
         <label for="">성명</label>
         <input type="text" id="" class="info-input">
       </div>
-      <div class="input">
+      <div class="input bt0">
         <label for="">성별</label>
-        <select name="" id="" class="info-input">
-          <option value="m">남</option>
-          <option value="f">여</option>
-        </select>
+        <div class="input">
+          <div class="select-box" class="info-input">
+            <select name="" id="">
+              <option value="">남</option>
+              <option value="">여</option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
+        </div>
       </div>
       <div class="input">
         <label for="">나이</label>
@@ -246,15 +257,18 @@
         </a>
       </div>
     </div>
-    <div>
+    <div class="input list">
       <button class="btn shadow">
         <span>3개월 이상 활동 공백 돌보미 찾기</span>
-      </button>
-      <select name="" id="" class="info-input">
-        <option value="">10</option>
-        <option value="">20</option>
-        <option value="">30</option>
-      </select>
+      </button> 
+      <div class="select-box">
+        <select name="" id="" class="info-text">
+          <option value="">10</option>
+          <option value="">20</option>
+          <option value="">30</option>
+        </select>
+        <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+      </div>   
     </div>
   </div>
   <div class="table-wrap color-table table5">
