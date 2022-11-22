@@ -223,11 +223,11 @@ $(function(){
         }, 1000);
     });
 
-    $('div.side-menu').on('scroll touchmove mousewheel',  function(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        return false;
-    });
+    // $('div.side-menu').on('scroll touchmove mousewheel',  function(event) {
+    //     event.preventDefault();
+    //     event.stopPropagation();
+    //     return false;
+    // });
 
      //모바일버전
     // width사이즈를 측정해서 resize 체크해야함.
@@ -238,11 +238,13 @@ $(function(){
     }
 
     $('a.hamburger-button').on('click', function() {
+        $('body').css({overflowY:'hidden'});
         $('div.side-menu').toggleClass('on');
         if($('div.side-menu').hasClass('on')) {
             $('a.hamburger-button').addClass('close');
             
         } else {
+            $('body').css({overflowY:'auto'});
             $('a.hamburger-button').removeClass('close');
             // 열고 닫을 때 화면 정리해주기
             $('div.side-menu > ul.main-menu > li > a').removeClass('on')
