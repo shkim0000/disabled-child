@@ -98,7 +98,7 @@ header .member-box .btn{margin-left:24px;}
     a.hamburger-button.close > span {opacity: 0;}
 
     /* 사이드메뉴 */
-    div.side-menu {width: 100%; overflow-y: scroll; border-radius: 0; left: 100%; transition: left 0.5s;}
+    div.side-menu {width: 100%; overflow-y: scroll; border-radius: 0; position: absolute; left: -100%; transition: all 0.3s;}
     div.side-menu.on {left: 0;}
     span.bar::after {top: 36px;}
     div.side-menu > ul {margin-top: 0;}
@@ -222,8 +222,7 @@ position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow:
 .pop-close:before{content:"";width:1px;height:95%;background:#6b7682;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%) rotate(45deg);}
 .pop-close:after{content:"";width:1px;height:95%;background:#6b7682;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%) rotate(-45deg);}
 .pop-body{text-align:center;padding:30px 18px 16px;}
-/* .layer-popup-bg {display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); position: fixed; left: 0; top: 0;}
-.layer-popup-bg.on {display: block;} */
+
 /* 탭 */
 .tab-box > *{border-radius:0;margin:0;}
 .tab-box > *:first-child{border-radius:4px 0 0 4px;}
@@ -291,8 +290,8 @@ position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow:
 .tables-wrap3 table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(7) { border-bottom-right-radius: 8px;}
 .tables-wrap3.color-table tr th:last-child { border-right: 1px solid var(--whiteColor);}
 
-.no-data {position: relative;}
-.no-data::after {content:''; display: block; width: 100%; height: 1px; background-color: var(--borderColor); position: absolute; left: 0; top: 50%; transform: rotate(-25deg) translateY(-50%); }
+td.no-data {position: relative;}
+td.no-data::after {content:''; display: block; width: 100%; height: 1px; background-color: var(--borderColor); position: absolute; left: 0; top: 50%; transform: rotate(-25deg) translateY(-50%); }
 
 
 
@@ -451,7 +450,8 @@ h3.info-title { margin:20px 27px;}
 /* 돌봄 서비스 소개 관리 */
 .con-box5 { height: 750px; margin-top: 78px; position: relative;}
 .con-box5 .image-box { min-height:500px; min-width: 500px; border: 1px dashed #757575; border-radius: 16px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-.con-box5 .image-box2 {position: static; min-height:40%; background-color: red; }
+.con-box5 .image-box2 {position: static; height:280px; }
+.con-box5 .image-box2 > a {display: block; background-color: #dbdbdb; height: 100%; text-align: center; font-weight: 700; display: flex; align-items: center; justify-content: center;}
 .con-box5 .image-box2 + div {margin-top: 20px;}
 .con-box5 button {  position: absolute; right: 60px; bottom: 50px;}
 .table-heading .address-btn-box { position: initial;}
@@ -459,14 +459,14 @@ h3.info-title { margin:20px 27px;}
 /* chart 그래프 */
 .table-wrap.chart{min-height: 300px; display: flex; align-items: center;}
 .table-wrap.chart > .chart-table {width: 100%;  display: flex; justify-content: center; }
-/* .table-wrap.chart .chart-table-list {width: auto; background-color: green; display: flex; flex-direction: column; }
-.table-wrap.chart .chart-table-list > li {background-color: pink; padding-left: 32px; position: relative;}
-.table-wrap.chart .chart-table-list > li + li {margin-top: 10px;}
-.table-wrap.chart .chart-table-list > li > span {display: block; width: 20px; height: 100%; position: absolute; left: 0; top: 0; background-color: brown; } */
+
 
 /* table thead높이 조정 */
 .correction {height: 66px;}
 .correction2 {height: 115px;}
+
+/* SA-08-14 지도 관리 */
+iframe {width: 100%; height: 100%;}
 
 /* SA-08-16 시스템 파라미터 관리 */
 .mark-box { width: 48px; height: 48px; margin: 0 auto; background: #d9d9d9;}

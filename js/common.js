@@ -216,8 +216,17 @@ $(function(){
 
         // 스크롤 자동 밑으로 이동
         $(".side-menu").animate({
+
+
+            
             scrollTop: $('.side-menu').height()
         }, 1000);
+    });
+
+    $('div.side-menu').on('scroll touchmove mousewheel',  function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
     });
 
      //모바일버전
