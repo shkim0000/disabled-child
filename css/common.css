@@ -412,6 +412,7 @@ h3.info-title { margin:20px 27px;}
 .info-input-box4 .input { min-width: 400px}
 .info-input-box4 .input:nth-child(2n-1)  {margin-right: 70px;}
 .info-input-box4 .input label { min-width: 100px;}
+.info-input-box4 .input .select-box.long {display: inline-block;}
 .info-input-box4 .input input, .info-input-box4 .input textarea { max-width: 295px;}
 .info-input-box4 .password-wrap .passwordbox:first-child { margin: 0 0 24px 0;}
 .info-input-box4 .password-wrap { margin-right: 70px;}
