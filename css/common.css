@@ -627,9 +627,10 @@ hr { max-width: 953px; background: #d9d9d9; }
 .program-img { background: #FFF url(../img/program-img.png) no-repeat center; width: 100%; height: 540px; }
 .map-img { background: #FFF url(../img/map-img.png) no-repeat center; width: 100%; height: 540px; background-size: contain;}
 
-.center-select-wrap { width: 100%; border-bottom: 1px solid var(--borderColor); background-color: red;}
+.center-select-wrap { width: 100%; border-bottom: 1px solid var(--borderColor);}
 .center-select-wrap { padding: 11px 0;}
-.center-select-wrap select { padding: 8px 18px; border: 1px solid #757575; border-radius: 6px; color: #757575; font-size: 16px;}
+.center-select-wrap > .wrap > .select-box {display: inline-block;}
+.center-select-wrap select { padding: 8px 36px 8px 18px; border: 1px solid #757575; border-radius: 6px; color: inherit; font-size: 16px; display: inline-block;}
 
 
 
