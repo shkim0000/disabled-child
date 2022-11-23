@@ -193,7 +193,7 @@ border-radius: 4px; padding: 10px; max-width: 295px;}
 
 .input-box > *{margin-bottom:24px;}
 .input-box > *:last-child{margin-bottom:0;}
-.input-box input[type=text], .input-box input[type=password]{width:100%;border:1px solid #dbdbdb;border-radius:4px;padding:10px;}
+.input-box input[type=text], .input-box input[type=password]{width:100%;border:1px solid #d9d9d9;border-radius:8px;padding:10px;}
 .input-box textarea{ width: 100%; border:1px solid #dbdbdb;border-radius:4px;padding:10px;resize:none;}
 .input-box label{display:inline-block;margin-bottom:8px;}
 .input-box input[type=date] { border: 1px solid var(--borderColor); cursor: pointer;}
@@ -324,10 +324,10 @@ h3.info-title { margin:20px 27px;}
 .info-input-box { display: flex; justify-content: flex-start; align-items: center;}
 .info-input-box .input { display: flex; justify-content: flex-start; margin: 0 20px 10px 0;}
 .info-input-box .input input, .info-input-box .input select, .info-input, .input.list select  { width: 108px;}
+.info-input-box .input select {height: 42px;}
 .info-input-box .input select, .input.list select  { border: 1px solid #D9D9D9; border-radius: 8px; padding: 10px;}
 .info-input-box .input label { margin: 0 16px 0 0; line-height: 42px; }
 .info-input-box button.btn { width: 66px; padding: 8px; margin-bottom: 10px; }
-.input.bt0 {margin-bottom: 0;}
 
 .input.list {display: flex;}
 
