@@ -83,10 +83,11 @@ header .member-box{display:flex;align-items:center;position:absolute;top:50%;rig
 header .member-box .btn{margin-left:24px;}
 
 @media (max-width:1400px){
+    .only-tablet {display: block!important;}
     header .menu{ display: none;}
     header .wrap { display: flex; justify-content: space-between; flex-direction: row-reverse; align-items: center;}
     div.member-box {position: static; transform: none;}
-    .only-tablet {display: block!  important;}
+    div.member-box .btn{padding: 4px 13px; font-size: 14px; margin-left: 12px;}
     
     /* 모바일, 태블릿: 햄버거 버튼 */
     a.hamburger-button {display: block!important; width: 28px;height: 24px;text-indent: -9999px; position: relative;}
@@ -414,6 +415,7 @@ h3.info-title { margin:20px 27px;}
 .info-input-box4 .input input, .info-input-box4 .input textarea { max-width: 295px;}
 .info-input-box4 .password-wrap .passwordbox:first-child { margin: 0 0 24px 0;}
 .info-input-box4 .password-wrap { margin-right: 70px;}
+
 
 .active-info-wrap, .account-info-wrap { margin-top: 45px;}
 
