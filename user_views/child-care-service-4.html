@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>장애아가족 양육지원사업</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/user_common.css">
+  <link rel="stylesheet" href="../lib/jquery-ui-1.13.2.custom/jquery-ui.min.css">
+
+  <!-- js & lib -->
+  <script src="../lib/jquery-3.6.1/jquery-3.6.1.js"></script>
+  <script src="../lib/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+  <script src="../js/user_common.js"></script>
+</head>
+<body>
+
+  <!-- header 미정 -->
+  <header id="header"></header>
+
+  <!-- 상단 페이지 안내 -->
+  <div class="progress">
+    <div class="wrap">
+      <ul>
+        <li><a href="#"><img src="../img/user_icons/icon_home.svg" alt="메인으로 가기"></a></li>
+        <li><a href="#">돌봄서비스</a></li>
+        <li><a href="#">이용요금</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="sidebar">
+        <h3 class="side j-center a-center">돌봄서비스</h3>
+        <ul class="first-menu">
+            <li><a href="#">지원대상 </a></li>
+            <li><a href="#">지원내용</a></li>
+            <li><a href="#">선정기준 및 이용 절차</a></li>
+            <li><a href="#" class="on">이용요금</a></li>
+            <li><a href="#">서비스 중지</a></li>
+        </ul>
+    </div>
+
+    <div class="page-layout">
+        <h2>이용요금</h2>
+        <div class="table-wrap standard2">
+          <h4>서비스 이용자의 소득 기준에 따라 돌봄 서비스 지원액 및 본인부담금 차등화</h4>
+          <div class="table">
+            <table>
+              <caption>서비스에 대한 이용자의 부담금 관한 표</caption>
+              <thead>
+                <tr>  
+                  <th colspan="3">시간당 이용요금</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td></td>
+                    <td>연 960시간 이내</td>
+                    <td>연 960시간 초과</td>
+                  </tr>
+                  <tr>
+                    <td>기준 중위소득 120% 이하 (본인부담 비율)</td>
+                    <td>무료 (본인부담 없음)</td>
+                    <td rowspan="2">11,280원 (전액 본인부담)</td>
+                  </tr>
+                  <tr>
+                    <td>기준 중위소득 120% 초과 (본인부담 비율)</td>
+                    <td>4,510원 (40%)</td>
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="list-wrap">
+          <h4>선정기준</h4>
+          <ul class="front-dots">
+            <li>
+              원칙: 서비스 이용 전에 선납을 원칙으로 하며, 본인부담금 수납 후 서비스 이용 가능
+              <p>* 이용자의 본인부담금은 도로미 급여로 전액 사용</p>
+            </li>
+            <li>
+              방법 : 서비스 대상자가 서비스 시행기관에 월 서비스 이용료 중 본인부담금 직접 납부
+            </li>
+            <li>
+              카드 납부 불가, 사업시행기관이 지정하는 은행으로 계좌입금만 가능
+            </li>
+          </ul>
+        </div>
+
+        <div class="cancel-list-box">
+          <h4>서비스 이용 취소에 따른 본인부담금 취소 방법 및 절차</h4>
+          <ul class="cancel-list">
+            <li>
+              <span class="title">STEP 1</span>
+              <div>취소요청<br />(이용자)</div>
+              <p>사업시행기관 업무 시간에 유선 연락하여 취소요청</p>
+            </li>
+            <li>
+              <span class="title">STEP 2</span>
+              <div>취소요청<br />(사업시행기관)</div>
+              <p>신청내용 접수처리</p>
+            </li>
+            <li>
+              <span class="title">STEP 3</span>
+              <div>취소요청<br />(사업시행기관)</div>
+              <p>이용자 및 장애아 돌보미에게 취소 처리 내용 통보</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="table-wrap standard2">
+          <h4>서비스 이용 취소에 따른 본인부담금 환불처리 기준</h4>
+          <div class="table">
+            <table>
+              <caption>서비스 이용 취소에 따른 본인부담금 환불처리 기준에 관한 표</caption>
+              <thead>
+                <tr>  
+                  <th class="left">본인부담금 100% 환불</th>
+                  <th>환불 불가</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td>
+                      <ul class="front-dots">
+                        <li>최소 1일 전 취소 신청 건</li>
+                        <li>장애아동의 갑작스런 질병, 사고 발생으로 계획된 돌봄 서비스 이용이 곤란할 경우
+                          <p>* 질병, 사고 발생을 확인할 수 있는 증빙서류 제출(진단서, 처방전 등)</p>
+                        </li>
+                      </ul>
+                    </td>
+                    <td>
+                      <ul class="front-dots">
+                        <li>서비스 당일 취소 시 해당일 신청 건에 대한 이용료
+                          <p>* 질병, 사고 발생을 확인할 수 있는 증빙서류 제출(진단서, 처방전 등)</p>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+
+
+  <!-- footer 미정 -->
+
+
+
+
+</body>
+</html>
