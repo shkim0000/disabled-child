@@ -35,4 +35,19 @@ $(function(){
         $(".tab-wrap .btn").removeClass("on").parent().eq(tabNum).find(".btn").addClass("on");
         $(".tab-box .tabs").removeClass("on").eq(tabNum).addClass("on");
     });
+
+
+    $('a.hamburger-button').on('click', function() {
+        $('body').css({overflowY:'hidden'});
+        $('div.menu-wrap').toggleClass('on');
+        if($('div.menu-wrap').hasClass('on')) {
+            $('a.hamburger-button').addClass('close');
+            
+        } else {
+            $('body').css({overflowY:'auto'});
+            $('a.hamburger-button').removeClass('close');
+            // 열고 닫을 때 화면 정리해주기
+        }
+    });
+
 });
