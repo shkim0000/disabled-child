@@ -41,7 +41,7 @@ img {vertical-align:top;}
 .ellipsis {display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;text-align:left;text-overflow:ellipsis;overflow:hidden;}
 
 /* 상단 페이지 안내 */
-.progress{border-bottom:1px solid #dbdbdb;padding:18px 0;margin-top: 98px;}
+.progress{border-bottom:1px solid #dbdbdb;padding:18px 0;}
 .progress ul{display:flex;align-items:center;}
 .progress ul > li{padding-right:8px;margin-right:8px;position:relative;}
 .progress ul > li:after{content:"";width:18px;height:18px;background:url("../img/user_icons/icon_right.svg") no-repeat;background-size:100%;position:absolute;top:4px;right:-10px;}
@@ -262,6 +262,11 @@ p.answer-box {padding:16px 88px 21px;font-size:12px;color:#000;font-weight:500;b
 .slide-list .text-content-box > .text-box {padding-left:50px;font-size: 14px;}
 .slide-list .text-content-box > .btn-wrap {margin-top:60px;}
 
+/* 이미지 슬라이드: information-yard-4 */
+.slide-box2 {width: 70%; position: relative; margin-top: 60px;}
+.slide-list2 > li {background-color: #dbdbdb; width: 70%; height: 440px; margin: 0 auto;}
+.slide-box2  > p {margin-top: 30px; font-size: 24px; color: #434343; text-align: center;}
+
 /* 이미지 슬라이드: 컨트롤 박스 */
 .control-btn-wrap > button{width: 60px; height: 60px; border-radius: 50%; border: 1px solid #dbdbdb; background-color: rgba(255,255,255, 0.5);text-indent: -9999px; position: absolute; top: 50%; transform: translateY(-50%);z-index: 10;}
 button.prev {left: 60px; }
@@ -272,10 +277,6 @@ button.next {right: 60px;}
 button.prev::after {border-bottom:2px solid #000; border-left:2px solid #000; }
 button.next::after {border-top:2px solid #000; border-right:2px solid #000;}
 
-/* 이미지 슬라이드: information-yard-2 */
-.slide-box2 {position: relative; margin-top: 60px;}
-.slide-list2 > li {background-color: #dbdbdb; width: 70%; height: 440px; margin: 0 auto;}
-.slide-box2  > p {margin-top: 30px; font-size: 24px; color: #434343; text-align: center;}
 
 /* #main > 공지사항 박스 */
 .notice-box{padding:0 0 24px;margin-top: 31px;transition:all 0.5s;}
@@ -324,8 +325,8 @@ button.next::after {border-top:2px solid #000; border-right:2px solid #000;}
     a.hamburger-button::before {content: '';display:block;width:100%;height:2px;position:absolute;top:0;left:50%;transform:translate(-50%, 0);background-color:#424242;transition:all 0.3s;}
     a.hamburger-button > span.bar {width:100%; height:2px;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);text-indent: -9999px;background-color:#424242;transition: all 0.3s;}
     a.hamburger-button::after {content: '';display:block;width:100%;height:2px;position:absolute;bottom:0;left:50%;transform:translate(-50%, 0);background-color: #424242;transition: all 0.3s;}
-    a.hamburger-button.close::before {width:120%;top:50%;transform:translate(-50%, -50%) rotate(32deg);}
-    a.hamburger-button.close::after {width:120%;bottom:50%;transform:translate(-50%, 50%) rotate(-32deg);}
+    a.hamburger-button.close::before {width:120%;top:50%;transform:translate(-50%, -50%) rotate(45deg);}
+    a.hamburger-button.close::after {width:120%;bottom:50%;transform:translate(-50%, 50%) rotate(-45deg);}
     a.hamburger-button.close > span {opacity: 0;}
 
     /* main: 크기 변경 */

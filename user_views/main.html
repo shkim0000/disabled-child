@@ -13,41 +13,39 @@
   <!-- js & lib -->
   <script src="../lib/jquery-3.6.1/jquery-3.6.1.js"></script>
   <script src="../lib/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+
+  <!-- swiper -->
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
   <script src="../js/user_common.js"></script>
 </head>
 <body>
 
-  <!-- header 미정 -->
-  <header id="header">
-    <div class="content-box j-between a-center">
-      <a href="#" title="hamburger-button" class="hamburger-button only-tablet on"><span class="bar">메뉴 열고/닫기</span></a>
-      <h1>
-        <a href="#">
-            장애아가족 양육지원사업
-        </a>
-      </h1>
-      <div class="menu-wrap j-between a-center">
-          <ul class="menu">
-            <li><a href="#">장애아 양육지원사업</a></li>
-            <li><a href="#">돌봄서비스</a></li>
-            <li><a href="#">휴식지원 프로그램</a></li>
-            <li><a href="#">장애아 돌보미</a></li>
-            <li><a href="#">정보마당</a></li>
-          </ul>
-          <div class="member-box">
-            <button type="button" class="btn line">로그인</button>
-            <button type="button" class="btn line">서비스</button>
-          </div>
-      </div>
-    </div>
-  </header>
   <!-- main -->
   <main id="main">
     <div class="content-box">
         <div class="main-box">
-            <div class="slide-box">
-                <ul class="slide-list">
-                    <li>
+            <div class="slide-box swiper">
+                <ul class="slide-list swiper-wrapper">
+                    <li class="swiper-slide">
+                        <div class="image-box">
+                            <img src="../img/banner-1.svg" alt="장애아가족 양육지원 사업" />
+                        </div>
+                        <div class="text-content-box">
+                            <h2>장애아가족 양육지원사업</h2>
+                            <p class="text-box">
+                                장애아동 가족의 일상적인 양육부담을 경감하고 보호자의 사회활동을 돕기 위하여,<br />
+                                일정한 자격을 갖춘 장애아 돌보미 대상자 가정 등에 직접 파견하는 돌봄서비스와
+                                <br />
+                                장애아가족 문화 및 교육 프로그램, 가족캠프 등의 휴식지원프로그램을 제공합니다.   
+                            </p>
+                            <div class="btn-wrap j-center">
+                                <button type="button" class="btn round">자세히 보기 +</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
                         <div class="image-box">
                             <img src="../img/banner-1.svg" alt="장애아가족 양육지원 사업" />
                         </div>
@@ -66,8 +64,8 @@
                     </li>
                 </ul>
                 <div class="control-btn-wrap">
-                    <button type="button" class="prev">이전버튼</button>
-                    <button type="button" class="next">다음버튼</button>
+                    <button type="button" class="swiper-button-prev prev">이전버튼</button>
+                    <button type="button" class="swiper-button-next next">다음버튼</button>
                 </div>
             </div>
             <div class="notice-box">
@@ -153,35 +151,6 @@
         </ul>
     </div>
   </main>
-  <!-- footer 미정 -->
-  <footer id="footer">
-    <div class="content-box j-between">
-        <div class="btn-wrap a-center">
-            <button type="button" class="btn foot">개인정보처리방침</button>
-            <button type="button" class="btn foot">저작권정책</button>
-        </div>
-        <div class="footer-info-box">
-            <ul class="footer-info-list">
-                <li>[07236] 서울시 영등포구 의사당대로 22 이룸센터 7층 중앙장애아동, 발달장애인지원센터</li>
-                <li>대표전화   02-3433-0743</li>
-                <li>발달재활서비스 제공인력 자격관리   1544-6065</li>
-                <li>팩스   02-3433-0739</li>
-                <li>발달장애인 권리구제 상담   1522-2882</li>
-            </ul>
-            <p class="copyright">COPYRIGHTS⒞ 2017 NATIONAL CENTER FOR DISABLED CHILDREN AND DEVELOPMENTAL DISABILITIES. ALL RIGHTS RESERVED</p>
-        </div>
-        <div class="select-box a-center">
-            <div class="select">
-              <select name="" id="">
-                <option value="0">관련사이트</option>
-              </select>
-            </div>
-          </div>
-    </div>
-  </footer>
-
-
-
 
 </body>
 </html>
