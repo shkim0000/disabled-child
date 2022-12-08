@@ -19,11 +19,70 @@ $(function(){
         </h1>
         <div class="menu-wrap j-between a-center">
             <ul class="menu">
-                <li><a href="#">장애아 양육지원사업</a></li>
-                <li><a href="#">돌봄서비스</a></li>
-                <li><a href="#">휴식지원 프로그램</a></li>
-                <li><a href="#">장애아 돌보미</a></li>
-                <li><a href="#">정보마당</a></li>
+                <li>
+                    <a href="#">장애아 양육지원사업</a>
+                    <ul class="second-depth">
+                        <li>
+                            <a href="#">장애아가족 양육지원사업</a>
+                            <ul class="third-depth">
+                                <li><a href="#">목적 및 추진방향</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">사업내용</a></li>
+                                <li><a href="#">근거법령 및 추진체계</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">사업현황</a>
+                            <ul class="third-depth">
+                                <li><a href="#">돌봄 서비스</a></li>
+                                <li><a href="#">휴식지원 프로그램</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">사업시행 기관</a>
+                        </li>
+                        <li>
+                            <a href="#">오시는 길</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">돌봄서비스</a>
+                    <ul class="second-depth">
+                        <li><a href="#">지원대상</a></li>
+                        <li><a href="#">지원내용</a></li>
+                        <li><a href="#">선정기준 및 이용 절차</a></li>
+                        <li><a href="#">이용요금</a></li>
+                        <li><a href="#">서비스 중지</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">휴식지원 프로그램</a>
+                    <ul class="second-depth">
+                        <li><a href="#">지원대상</a></li>
+                        <li><a href="#">지원내용</a></li>
+                        <li><a href="#">선정기준 및 이용 절차</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">장애아 돌보미</a>
+                    <ul class="second-depth">
+                        <li><a href="#">자격기준 및 양성교육</a></li>
+                        <li><a href="#">선발 및 활동절차</a></li>
+                        <li><a href="#">주요활동</a></li>
+                        <li><a href="#">근무조건</a></li>
+                        <li><a href="#">연계중지 및 활동중지</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">정보마당</a>
+                    <ul class="second-depth">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">갤러리</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">자료실</a></li>
+                    </ul>
+                </li>
             </ul>
             <div class="member-box">
                 <button type="button" class="btn line">로그인</button>
@@ -109,58 +168,35 @@ $(function(){
             $('body').css({overflowY:'auto'});
             $('a.hamburger-button').removeClass('close');
             // 열고 닫을 때 화면 정리해주기
+            $('.menu > li > a').removeClass('on')
+            $('ul.second-depth').slideUp(500)
+            $('ul.second-depth > li > a').removeClass('on');
+            $('ul.third-depth').slideUp(500);
+
+        }
+    });
+
+    $(".second-depth, .third-depth").slideUp(0);
+
+    $(".menu > li > a, .second-depth a").on("click", function(){
+        if($(window).innerWidth() <= 1350){
+            if(!$(this).next().hasClass("on")){
+                $(this).next().addClass("on").slideDown();
+            }else{
+                $(this).next().removeClass("on").slideUp();
+            }
+        }
+    });
+
+    $(window).resize(function(){
+        if($(window).innerWidth() >= 1350){
+            $('.hamburger-button').removeClass('close');
+            $(".second-depth, .third-depth").removeClass("on").stop().slideUp(0);
         }
     });
 
 
-    /* 메인 슬라이더 */
-    const swiper1 = new Swiper('.slide-box', {
-        // Optional parameters
-        loop: true,
-      
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
 
-        speed:1000,
-        autoplay: {     //자동슬라이드 (false-비활성화)
-            delay: 5000, // 시간 설정
-            disableOnInteraction: false, // false-스와이프 후 자동 재생
-          },
-    });
-
-    /* information-yard-4.html */
-    const swiper2 = new Swiper('.slide-box2', {
-        // Optional parameters
-        loop: true,
-      
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-
-        speed:1000,
-    });
-
-    var slideNum = $('span.slide-num');
-    var slideNum = $('.slide-list2 > li').length;
-
-    $('span.slide-length').text(slideNum-2);
-
-    swiper2.on('slideChange', function(){
-        var idx = swiper2.activeIndex;
-
-        if(idx >= (slideNum-1)) {
-            idx = 1;
-        }else if(idx == 0){
-            idx = (slideNum-2);
-        }
-
-        $('span.slide-num').text(idx)
-    });
 
 
 });
