@@ -191,10 +191,11 @@ em{font-style:normal;font-weight: 500;}
 
 /* 닷 스타일: chlid-care-service-2/3/4  */
 .front-dots.support > li + li{margin-top:20px;}
-.front-dots > li > p{font-size:14px;color:#5b5b5b;}
+.front-dots > li > p{color:#5b5b5b;}
 /* 테이블 안에 있을 때 디자인 */
 .front-dots.table-case > li{text-align:left;font-size:12px;}
 .front-dots.table-case > li{text-align:left;font-size:12px;}
+.front-dots.table-case > li > p{font-size:12px;}
 .front-dots.table-case > li::before{top:5px;}
 .front-dots > li.long2 > p{font-size:12px;}
 
@@ -588,7 +589,8 @@ button.next{right:60px;}
 /* chlid-care-service-1 */
 .target-box{display:flex;padding:30px 0 0 30px;}
 .desc-box{display:flex;padding:50px 0;}
-.desc-box > div:first-child > p.title{margin-bottom:11px;font-size:20px;color:#252525;}
+.desc-box > div > p.title{margin-bottom:11px;font-size:20px;color:#252525;}
+.desc-box > div:last-child > p.title{min-width:160px;}
 .desc-box > div:first-child > p.text{color:#5b5b5b;}
 .desc-box > div+div{width:125px;text-align:center;}
 
