@@ -37,47 +37,50 @@
 <div class="wrap">
   <h3 class="info-title">관리자 페이지 > 서비스 현황 > 이용자 정보</h3>
   <div class="con-box">
-    <div class="input-box info-input-box">
-      <div class="input">
-        <label for="">실적기관</label>
-        <div class="select-box">
-          <select name="" id="">
-            <option value="">전체</option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-          <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+    <div class="search-box">
+      <div class="input-box info-input-box">
+        <div class="input agency">
+          <label for="">실적기관</label>
+          <div class="select-box">
+            <select name="" id="">
+              <option value="">전체</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
+        </div>
+  
+        <div class="input name">
+          <label for="">성명</label>
+          <input type="text" id="" class="info-input">
+        </div>
+  
+        <div class="input gender">
+          <label for="">성별</label>
+          <div class="select-box">
+            <select name="" id="">
+              <option value="">남</option>
+              <option value="">여</option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
+        </div>
+  
+        <div class="input age">
+          <label for="">나이</label>
+          <input type="text" id="" class="info-input">
+          <span class="age-input"> ~ </span>
+          <input type="text" id="" class="info-input">
         </div>
       </div>
-
-      <div class="input">
-        <label for="">성명</label>
-        <input type="text" id="" class="info-input">
+      <div class="btn-wrap j-center">
+        <button class="btn small">조회</button>
       </div>
-
-      <div class="input">
-        <label for="">성별</label>
-        <div class="select-box">
-          <select name="" id="">
-            <option value="">남</option>
-            <option value="">여</option>
-          </select>
-          <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
-        </div>
-      </div>
-
-      <div class="input">
-        <label for="">나이</label>
-        <input type="text" id="" class="info-input">
-        <span class="age-input"> ~ </span>
-        <input type="text" id="" class="info-input">
-      </div>
-      
-      <button class="btn small">조회</button>
     </div>
 
     <div class="info-details">
-      <div class="info-detail-item adress">
+      <div class="info-detail-item adress w-15">
         <h4>주소지</h4>
         <div class="info-detail-box">
           <p>강서구</p>
@@ -88,7 +91,7 @@
           </div>
         </div>
       </div>
-      <div class="info-detail-item target">
+      <div class="info-detail-item target w-30">
         <h4>활동 희망대상</h4>
         <div class="info-detail-box">
           <div class="check-box check-box3">
@@ -155,7 +158,7 @@
           </div>
         </div>
       </div>
-      <div class="info-detail-item wage">
+      <div class="info-detail-item wage w-15">
         <h4>소득기준</h4>
         <div class="info-detail-box">
           <div class="check-box check-box2">
@@ -170,7 +173,7 @@
           </div>
         </div>
       </div>
-      <div class="info-detail-item user-condition">
+      <div class="info-detail-item user-condition w-20">
         <h4>이용자상태</h4>
         <div class="info-detail-box">
           <div class="check-box check-box2">
@@ -189,7 +192,7 @@
           </div>
         </div>
       </div>
-      <div class="info-detail-item user-condition2">
+      <div class="info-detail-item user-condition2 w-20">
         <h4>이용자상태</h4>
         <div class="info-detail-box">
           <div class="check-box check-box2">
