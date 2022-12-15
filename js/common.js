@@ -124,6 +124,8 @@ $(function(){
             $(".popup.pop23").addClass("on");
         }else if($(this).hasClass("pop24")){
             $(".popup.pop24").addClass("on");
+        }else if($(this).hasClass("pop25")){
+            $(".popup.pop25").addClass("on");
         }
     });
 

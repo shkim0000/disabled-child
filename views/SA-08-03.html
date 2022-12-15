@@ -39,7 +39,7 @@
   <div class="con-box">
     <div class="search-box">
       <div class="input-box info-input-box">
-        <div class="input agency">
+        <div class="input">
           <label for="">실적기관</label>
           <div class="select-box">
             <select name="" id="">
@@ -67,7 +67,7 @@
           </div>
         </div>
   
-        <div class="input age">
+        <div class="input">
           <label for="">나이</label>
           <input type="text" id="" class="info-input">
           <span class="age-input"> ~ </span>
@@ -80,7 +80,7 @@
     </div>
 
     <div class="info-details">
-      <div class="info-detail-item adress w-15">
+      <div class="info-detail-item address w-15">
         <h4>주소지</h4>
         <div class="info-detail-box">
           <p>강서구</p>
@@ -223,7 +223,7 @@
   </div>
 
   <div class="table-heading">
-    <div>
+    <div class="exel-box">
       <div class="upload-filebox btn shadow">
         <label for="upload-file"><img src="../img/Excel-logo.svg">Excel 업로드</label>
         <input type="file" id="upload-file"> 
@@ -235,17 +235,23 @@
         </a>
       </div>
     </div>
-    <div>
+    <div class="exel-box">
       <button class="btn shadow">
         <span>3개월 이상 활동 공백 돌보미 찾기</span>
       </button>
-      <select name="" id="" class="info-input">
-        <option value="">10</option>
-        <option value="">20</option>
-        <option value="">30</option>
-      </select>
+      <div class="input list"> 
+        <div class="select-box">
+          <select name="" id="" class="info-text">
+            <option value="">10</option>
+            <option value="">20</option>
+            <option value="">30</option>
+          </select>
+          <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+        </div>   
+      </div>
     </div>
   </div>
+
   <div class="table-wrap color-table table5">
     <table>
       <thead>
@@ -387,8 +393,8 @@
       </tbody>
     </table>
     <div class="pagpan">
-      <a href="javascript:void(0);"><span><img src="../img/left-arrow.svg" alt=""></span></a>
       <a href="javascript:void(0);"><span><img src="../img/left-double-arrow.svg" alt=""></span></a>
+      <a href="javascript:void(0);"><span><img src="../img/left-arrow.svg" alt=""></span></a>
       <a href="javascript:void(0);"><span class="active">1</span></a>
       <a href="javascript:void(0);"><span>2</span></a>
       <a href="javascript:void(0);"><span>3</span></a>
@@ -401,6 +407,50 @@
       <a href="javascript:void(0);"><span>10</span></a>
       <a href="javascript:void(0);"><span><img src="../img/right-arrow.jpg" alt=""></span></a>
       <a href="javascript:void(0);"><span><img src="../img/right-double-arrow.svg" alt=""></span></a>
+    </div>
+  </div>
+</div>
+
+<!-- 팝업 임시 위치 -->
+<div style="display:flex;position:fixed;bottom:10px;right:10px;">
+  <button type="button" class="btn pop-btn pop25">팝업25</button>
+</div>
+<!-- // 팝업 임시 위치 -->
+<div class="popup pop25">
+  <div class="pop-box">
+    <div class="pop-title">
+      <h3>시/군/구 선택</h3>
+      <button type="button" class="btn pop-close"></button>
+    </div>
+    <div class="pop-body">
+      <div class="input-box info-input-box ">
+        <div class="input">
+          <label for="">시/도</label>
+          <div class="select-box">
+            <select name="" id="">
+              <option value="">전체</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
+        </div>
+        <div class="input">
+          <label for="">시/군/구</label>
+          <div class="select-box">
+            <select name="" id="">
+              <option value="">전체</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+          </div>
+        </div>
+      </div>
+      <div class="btn-wrap j-center">
+        <button type="button" class="btn small close-btn">아니요</button>
+        <button type="button" class="btn small ok-btn">네</button>
+      </div>
     </div>
   </div>
 </div>
