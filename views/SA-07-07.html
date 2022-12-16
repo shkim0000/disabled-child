@@ -76,7 +76,7 @@
   </div>
 
   <div class="table-heading">
-    <div>
+    <div class="exel-box">
       <div class="upload-filebox btn shadow">
         <label for="upload-file"><img src="../img/Excel-logo.svg">Excel 업로드</label>
         <input type="file" id="upload-file"> 
@@ -88,15 +88,17 @@
         </a>
       </div>
     </div>
-    <div class="input list"> 
-      <div class="select-box">
-        <select name="" id="" class="info-text">
-          <option value="">10</option>
-          <option value="">20</option>
-          <option value="">30</option>
-        </select>
-        <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
-      </div>   
+    <div class="exel-box">
+      <div class="input list"> 
+        <div class="select-box">
+          <select name="" id="" class="info-text">
+            <option value="">10</option>
+            <option value="">20</option>
+            <option value="">30</option>
+          </select>
+          <span><img src="./../img/datepicker-arrow.png" alt="셀렉트박스 열기" /></span>
+        </div>   
+      </div>
     </div>
   </div>
 
@@ -300,10 +302,7 @@
     </table>
 
     <div class="pagpan">
-      <div class="left-side-btn flex">
-        <button class="btn xsmall">처리 중</button>
-        <button class="btn xsmall">처리완료</button>
-      </div>
+      <button class="btn xsmall left-side-btn">글쓰기</button>
       <a href="javascript:void(0);"><span><img src="../img/left-double-arrow.svg" alt=""></span></a>
       <a href="javascript:void(0);"><span><img src="../img/left-arrow.svg" alt=""></span></a>
       <a href="javascript:void(0);"><span class="active">1</span></a>
@@ -318,7 +317,10 @@
       <a href="javascript:void(0);"><span>10</span></a>
       <a href="javascript:void(0);"><span><img src="../img/right-arrow.jpg" alt=""></span></a>
       <a href="javascript:void(0);"><span><img src="../img/right-double-arrow.svg" alt=""></span></a>
-      <button class="btn xsmall right-side-btn">글쓰기</button>
+      <div class="right-side-btn flex">
+        <button class="btn xsmall">처리 중</button>
+        <button class="btn xsmall">처리완료</button>
+      </div>
     </div>
   </div>
 </div>

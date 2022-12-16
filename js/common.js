@@ -170,6 +170,11 @@ $(function(){
         // buttonText: "Select date"
     });
 
+    // 삭제버튼 클릭시 다시확인창
+    $('.delete-btn').on('click', function() {
+        confirm('정말로 삭제하시겠습니까?');
+    });
+
     // 사이드메뉴
     $(".second-menu").slideUp(0);
     $(".third-menu").slideUp(0);
